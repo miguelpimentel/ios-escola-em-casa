@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C6C74D6AFCE7374C508873B /* Pods_Escola_em_Casa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626E6F736A7826E8CBB1CEA5 /* Pods_Escola_em_Casa.framework */; };
+		AD45F8CE252BD99600142A39 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD45F8CD252BD99600142A39 /* Coordinator.swift */; };
 		AD4E81AB252A7ACA000F4AFC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E81AA252A7ACA000F4AFC /* OnboardingView.swift */; };
 		AD4E81AF252A7B28000F4AFC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E81AE252A7B28000F4AFC /* OnboardingViewController.swift */; };
 		AD4E81B2252A7D61000F4AFC /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E81B1252A7D61000F4AFC /* SessionManager.swift */; };
@@ -48,6 +49,7 @@
 		5151DD80682D097B54570910 /* Pods-Escola em Casa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Escola em Casa.debug.xcconfig"; path = "Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa.debug.xcconfig"; sourceTree = "<group>"; };
 		626E6F736A7826E8CBB1CEA5 /* Pods_Escola_em_Casa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Escola_em_Casa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C8AC449380F473F3732452F /* Pods-Escola em Casa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Escola em Casa.release.xcconfig"; path = "Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa.release.xcconfig"; sourceTree = "<group>"; };
+		AD45F8CD252BD99600142A39 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		AD4E81AA252A7ACA000F4AFC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		AD4E81AE252A7B28000F4AFC /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		AD4E81B1252A7D61000F4AFC /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			children = (
 				AD4E81B4252A7DBF000F4AFC /* AppDefaultsKeys.swift */,
 				AD4E81B1252A7D61000F4AFC /* SessionManager.swift */,
+				AD45F8CD252BD99600142A39 /* Coordinator.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			files = (
 				B093148A24BBFEBF00F42961 /* SceneDelegate.swift in Sources */,
 				AD4E81B5252A7DBF000F4AFC /* AppDefaultsKeys.swift in Sources */,
+				AD45F8CE252BD99600142A39 /* Coordinator.swift in Sources */,
 				B093145624BBEC9300F42961 /* WikiWebViewController.swift in Sources */,
 				B06D301624C8178F004FCD50 /* SiteWebViewController.swift in Sources */,
 				AD4E81AB252A7ACA000F4AFC /* OnboardingView.swift in Sources */,

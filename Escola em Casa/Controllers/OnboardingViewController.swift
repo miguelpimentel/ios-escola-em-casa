@@ -7,6 +7,8 @@
 //
 
 import UIKit
+
+import SnapKit
 import paper_onboarding
 
 class OnboardingViewController: UIViewController {
@@ -33,6 +35,13 @@ class OnboardingViewController: UIViewController {
 
     private func setupLayout() {
         view.addSubview(onboardingView)
+        setupConstraints()
+    }
+
+    private func setupConstraints() {
+        onboardingView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
     }
 }
 
@@ -49,14 +58,14 @@ extension OnboardingViewController: PaperOnboardingDataSource {
     func onboardingItem(at index: Int) -> OnboardingItemInfo {
         return OnboardingItemInfo(
             informationImage: UIImage(),
-            title: "",
-            description: "",
+            title: "Teste 1",
+            description: "Some random description",
             pageIcon: UIImage(),
-            color: .black,
+            color: .darkGray,
             titleColor: .green,
             descriptionColor: .red,
             titleFont: UIFont(descriptor: UIFontDescriptor(), size: 20),
-            descriptionFont: UIFont(descriptor: UIFontDescriptor(), size: 12)
+            descriptionFont: UIFont(descriptor: UIFontDescriptor(), size: 16)
         )
     }
 }

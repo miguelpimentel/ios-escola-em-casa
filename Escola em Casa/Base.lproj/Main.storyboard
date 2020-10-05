@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w9o-Fy-OdW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -62,7 +63,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="N28-gH-Pbg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="cVd-85-mo0" firstAttribute="centerX" secondItem="3oZ-L6-5oF" secondAttribute="centerX" id="4FU-Su-4eH"/>
                             <constraint firstItem="eZ6-Sy-EUV" firstAttribute="leading" secondItem="3oZ-L6-5oF" secondAttribute="leading" constant="20" id="54S-mu-D1U"/>
@@ -91,13 +93,12 @@
                             <constraint firstItem="e0M-ON-1x6" firstAttribute="top" secondItem="MhB-Vl-bTk" secondAttribute="bottom" constant="5" id="uNy-aW-S3k"/>
                             <constraint firstItem="e0M-ON-1x6" firstAttribute="centerX" secondItem="3oZ-L6-5oF" secondAttribute="centerX" id="xfQ-Zf-XLD"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="N28-gH-Pbg"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dúvidas Frequentes" image="help" selectedImage="help-full" id="dFu-9P-Tkw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ABN-pa-v5L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-188.40579710144928" y="-708.48214285714278"/>
+            <point key="canvasLocation" x="-248" y="-755"/>
         </scene>
         <!--Google Sala de Aula-->
         <scene sceneID="hNz-n2-bh7">
@@ -112,12 +113,12 @@
                                 <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="71U-oz-4pD" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="qxN-ye-5BC"/>
                             <constraint firstItem="71U-oz-4pD" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="rLo-tR-FGc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Google Sala de Aula" image="book" selectedImage="book-full" id="acW-dT-cKf"/>
                     <connections>
@@ -146,8 +147,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnT-tW-3GE">
-                                <rect key="frame" x="66.5" y="511" width="281" height="33"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnT-tW-3GE">
+                                <rect key="frame" x="67" y="511" width="280" height="33"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Como acessar o Google Sala de Aula"/>
                                 <connections>
@@ -160,8 +161,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AB-3z-OWx">
-                                <rect key="frame" x="123.5" y="585" width="167" height="33"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AB-3z-OWx">
+                                <rect key="frame" x="124" y="585" width="166" height="33"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Escola em Casa (Site)"/>
                                 <connections>
@@ -175,7 +176,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="t4v-gL-NCE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="OTv-UB-4vx" firstAttribute="centerX" secondItem="XnT-tW-3GE" secondAttribute="centerX" id="2At-Yu-Wc0"/>
                             <constraint firstAttribute="trailing" secondItem="BFJ-Lk-MXR" secondAttribute="trailing" constant="10" id="7gs-Om-kLZ"/>
@@ -197,7 +199,6 @@
                             <constraint firstItem="0lk-bg-zYk" firstAttribute="top" secondItem="t4v-gL-NCE" secondAttribute="top" constant="10" id="reJ-J0-mKF"/>
                             <constraint firstItem="0lk-bg-zYk" firstAttribute="centerX" secondItem="B3S-Bf-TJf" secondAttribute="centerX" id="wXS-fj-FEO"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="t4v-gL-NCE"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sobre" image="info" selectedImage="info-full" id="XvN-s5-NHY"/>
                 </viewController>
@@ -212,14 +213,14 @@
                     <view key="view" contentMode="scaleToFill" id="kX1-pb-JO0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="KLo-8r-d0U"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="rig-Sb-lnN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ziC-IN-0qG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="501" y="1013"/>
+            <point key="canvasLocation" x="749" y="1046"/>
         </scene>
         <!--Wikipedia-->
         <scene sceneID="wg7-f3-ORb">
@@ -234,12 +235,12 @@
                                 <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2Ka-98-xeU" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="Oht-fu-kqb"/>
                             <constraint firstItem="2Ka-98-xeU" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="snx-pV-x4A"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Wikipedia" image="wiki" selectedImage="wiki-full" id="cPa-gy-q4n"/>
                     <connections>
@@ -277,8 +278,8 @@
                     <view key="view" contentMode="scaleToFill" id="1eV-9k-wbp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="PhQ-G6-F3i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Rdx-ed-UIC"/>
                 </viewController>
@@ -347,6 +348,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="cOc-AZ-Uaa"/>
                         <color key="backgroundColor" red="0.12549019610000001" green="0.57254901960000004" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Vf0-Ry-b8t" firstAttribute="centerX" secondItem="TWc-Ak-flB" secondAttribute="centerX" id="2Oh-1f-aVW"/>
@@ -372,7 +374,6 @@
                             <constraint firstItem="tf1-v6-azG" firstAttribute="top" secondItem="sCD-ek-Ozr" secondAttribute="bottom" constant="30" id="w0e-fS-Zzs"/>
                             <constraint firstItem="k9Z-ox-WwG" firstAttribute="centerX" secondItem="TWc-Ak-flB" secondAttribute="centerX" id="wPf-tK-fnV"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="cOc-AZ-Uaa"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gs6-FY-rhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -393,5 +394,8 @@
         <image name="white-logo-text" width="381" height="300"/>
         <image name="wiki" width="24" height="24"/>
         <image name="wiki-full" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
