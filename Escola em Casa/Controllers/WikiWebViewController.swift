@@ -44,9 +44,9 @@ class WikiWebViewController: UIViewController, WKNavigationDelegate{
         self.webView.navigationDelegate = self
         self.activity.hidesWhenStopped = true
         
-        let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
-        toolbarItems = [refresh]
-        navigationController?.isToolbarHidden = false
+//        let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
+//        toolbarItems = [refresh]
+//        navigationController?.isToolbarHidden = false
     }
     
     override func loadView() {

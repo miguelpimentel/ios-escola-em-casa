@@ -71,9 +71,9 @@ class GCWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate 
         
         let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
         toolbarItems = [refresh]
-        navigationController?.isToolbarHidden = false
-
-        self.navigationController?.pushViewController(OnboardingViewController(), animated: true)
+//        navigationController?.isToolbarHidden = false
+//
+//        self.navigationController?.pushViewController(OnboardingViewController(), animated: true)
     }
     
     override func loadView() {

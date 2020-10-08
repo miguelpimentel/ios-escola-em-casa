@@ -63,6 +63,8 @@ class AppCoordinator: Coordinator {
     // MARK: - Public methods
 
     override func start() {
-        navigationController.pushViewController(OnboardingViewController(), animated: true)
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let viewController = storyBoard.instantiateViewController(withIdentifier: "ResultView") as? UITabBarController else { return }
+        navigationController.pushViewController(viewController, animated: true)
     }
 }

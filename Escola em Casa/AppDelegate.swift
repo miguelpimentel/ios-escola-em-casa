@@ -8,11 +8,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-//        SmiSdk.initSponsoredVPN("API-KEY", showSDMessage: false)
+        SmiSdk.initSponsoredVPN("API-KEY", showSDMessage: false)
 
         guard let window = UIApplication.shared.windows.first else { return true }
         AppCoordinator(with: window).start()
-
 
         return true
     }
