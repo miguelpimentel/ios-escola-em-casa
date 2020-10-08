@@ -72,6 +72,4 @@ class WikiWebViewController: UIViewController, WKNavigationDelegate{
         
         webView.configuration.userContentController.addUserScript(jsScriptRemoveDonationButton)
     }
-    
-    
 }

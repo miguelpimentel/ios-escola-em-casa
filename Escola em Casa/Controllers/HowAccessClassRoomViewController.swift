@@ -27,12 +27,10 @@ class HowAccessClassRoomViewController: UIViewController, WKNavigationDelegate {
         toolbarItems = [refresh]
         navigationController?.isToolbarHidden = false
     }
-    
+
     override func loadView() {
         webView = WKWebView()
         webView.navigationDelegate = self
         view = webView
     }
-
-
 }

@@ -2,7 +2,7 @@
 //  Coordinator.swift
 //  Escola em Casa
 //
-//  Created by Miguel Pimentel on 05/10/20.
+//  Created by Miguel Pimentel on 08/10/20.
 //  Copyright © 2020 Laércio Silva de Sousa Júnior. All rights reserved.
 //
 
@@ -36,35 +36,5 @@ class Coordinator: NSObject, UINavigationControllerDelegate {
     func popCoordinator(_ coordinator: Coordinator) {
         guard let index = childCoordinators.firstIndex(where: { $0 === coordinator }) else { return }
         childCoordinators.remove(at: index)
-    }
-}
-
-class AppCoordinator: Coordinator {
-
-    // MARK: - Properties
-
-    private let window: UIWindow
-    private let navigationController = UINavigationController()
-
-    var rootViewController: UIViewController {
-        return navigationController
-    }
-
-    // MARK: - Initialization
-
-    init(with window: UIWindow) {
-        self.window = window
-        super.init()
-        self.navigationController.navigationBar.isTranslucent = false
-        self.window.rootViewController = rootViewController
-        self.window.makeKeyAndVisible()
-    }
-
-    // MARK: - Public methods
-
-    override func start() {
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        guard let viewController = storyBoard.instantiateViewController(withIdentifier: "ResultView") as? UITabBarController else { return }
-        navigationController.pushViewController(viewController, animated: true)
     }
 }
