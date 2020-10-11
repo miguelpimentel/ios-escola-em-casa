@@ -37,16 +37,11 @@ class WikiWebViewController: UIViewController, WKNavigationDelegate{
         
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
-        
-        // add activity
+
         self.webView.addSubview(self.activity)
         self.activity.startAnimating()
         self.webView.navigationDelegate = self
         self.activity.hidesWhenStopped = true
-        
-//        let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
-//        toolbarItems = [refresh]
-//        navigationController?.isToolbarHidden = false
     }
     
     override func loadView() {

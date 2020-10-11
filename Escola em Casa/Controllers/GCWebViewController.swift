@@ -2,9 +2,13 @@ import UIKit
 import WebKit
 
 class GCWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
+
+    // MARK: - Properties
+
     @IBOutlet weak var activity: UIActivityIndicatorView!
+
     var webView: WKWebView!
-    
+
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         activity.stopAnimating()
     }
@@ -71,9 +75,6 @@ class GCWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate 
         
         let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
         toolbarItems = [refresh]
-//        navigationController?.isToolbarHidden = false
-//
-//        self.navigationController?.pushViewController(OnboardingViewController(), animated: true)
     }
     
     override func loadView() {
@@ -125,5 +126,4 @@ class GCWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate 
         webView.configuration.userContentController.addUserScript(jsScriptEmailBlocker)
         webView.configuration.userContentController.addUserScript(jsScriptFixBackButton)
     }
-    
 }

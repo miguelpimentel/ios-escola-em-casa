@@ -25,7 +25,6 @@ class SiteWebViewControllerViewController: UIViewController, WKNavigationDelegat
 
         let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
         toolbarItems = [refresh]
-        navigationController?.isToolbarHidden = false
     }
     
     override func loadView() {

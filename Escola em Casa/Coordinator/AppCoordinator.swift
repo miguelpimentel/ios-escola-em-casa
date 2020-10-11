@@ -32,6 +32,7 @@ class AppCoordinator: Coordinator {
     // MARK: - Public methods
 
     override func start() {
+//        Loader.start(loaderColor: UIColor.blue)
         guard let viewController = instaciateMainStoryboard() as? UITabBarController else { return }
         navigationController.pushViewController(viewController, animated: true)
     }
