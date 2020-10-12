@@ -45,9 +45,7 @@ class OnboardingViewController: UIViewController {
     }
 }
 
-extension OnboardingViewController: PaperOnboardingDelegate {
-
-}
+extension OnboardingViewController: PaperOnboardingDelegate { }
 
 extension OnboardingViewController: PaperOnboardingDataSource {
 

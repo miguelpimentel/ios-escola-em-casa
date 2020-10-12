@@ -18,7 +18,6 @@ class GCWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate 
     }
     
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
-
         if navigationAction.targetFrame == nil {
             if let host = navigationAction.request.url?.host {
                 let url = (navigationAction.request.url?.absoluteString ?? "")
@@ -27,6 +26,7 @@ class GCWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate 
                 }
             }
         }
+
         return nil
     }
     

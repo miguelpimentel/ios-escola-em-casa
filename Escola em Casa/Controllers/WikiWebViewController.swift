@@ -18,18 +18,19 @@ class WikiWebViewController: UIViewController, WKNavigationDelegate{
             webView.load(navigationAction.request)
             print("Lançamento de nova aba")
         }
+
         if let host = navigationAction.request.url?.host {
             if host.contains("wikipedia.org") {
                 decisionHandler(.allow)
                 return
             }
         }
-        
+
         print("Request Bloqueada")
         
         decisionHandler(.cancel)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

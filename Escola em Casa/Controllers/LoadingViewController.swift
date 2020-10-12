@@ -6,24 +6,11 @@ class LoadingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        NotificationCenter.default.addObserver( self,selector: #selector(receivedStateChage), name: NSNotification.Name(rawValue: SDSTATE_CHANGE_NOTIF), object: nil)
+        NotificationCenter.default.addObserver(self,selector: #selector(receivedStateChage), name: NSNotification.Name(rawValue: SDSTATE_CHANGE_NOTIF), object: nil)
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        
-        
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        
-//        if (SmiSdk.getVpnSdState()==SdState.SD_WIFI){
-//            let resultViewController = storyBoard.instantiateViewController(withIdentifier: "ResultView") as! UITabBarController
-//            UIApplication.shared.keyWindow?.rootViewController =  resultViewController
-//        }
-//        if (SmiSdk.getVpnSdState()==SdState.SD_AVAILABLE){
-//            let resultViewController = storyBoard.instantiateViewController(withIdentifier: "ResultView") as! UITabBarController
-//            UIApplication.shared.keyWindow?.rootViewController =  resultViewController
-//        }
     }
 
     @objc func receivedStateChage(notification: NSNotification){

@@ -69,7 +69,7 @@ public class Loader {
 
     // MARK: Methods
 
-    public static func start(withImage image: UIImage? = nil, loaderColor: UIColor) {
+    public static func start(withImage image: UIImage? = nil, loaderColor: UIColor = UIColor.blue) {
         if let window: UIWindow = UIApplication.shared.windows.filter({ $0.isKeyWindow }).first {
             var found: Bool = false
 

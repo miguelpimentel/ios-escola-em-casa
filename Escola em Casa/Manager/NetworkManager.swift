@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import SmiSdkVpn
 
 class NetworkManager {
@@ -20,13 +21,13 @@ class NetworkManager {
         )
     }
 
-    static func verifyConnection() {
+    func verifyConnection() {
         let connectionState = SmiSdk.getVpnSdState()
 
         if connectionState == SdState.SD_WIFI {
-
+            // Loader.stop()
         } else if connectionState == SdState.SD_AVAILABLE {
-
+            // Loader.stop()
         }
     }
 
