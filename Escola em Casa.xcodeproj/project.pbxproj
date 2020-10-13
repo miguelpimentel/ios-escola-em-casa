@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD919F5F25363CB700F637FD /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD919F5E25363CB700F637FD /* FAQViewController.swift */; };
+		AD919F6125363D9B00F637FD /* FAQTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD919F6025363D9B00F637FD /* FAQTableViewCell.swift */; };
 		B058200124E3249A00ADB655 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200024E3249A00ADB655 /* CoreTelephony.framework */; };
 		B058200324E324A500ADB655 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200224E324A500ADB655 /* NetworkExtension.framework */; };
 		B058200524E324AF00ADB655 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200424E324AF00ADB655 /* SystemConfiguration.framework */; };
@@ -23,6 +25,7 @@
 		B09C247B24F89EB9000A3D4A /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09C247A24F89EB9000A3D4A /* LoadingViewController.swift */; };
 		B0C514482512F4D0009924EE /* SmiSdkVpn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C514462512F4C2009924EE /* SmiSdkVpn.framework */; };
 		B0C514492512F4D0009924EE /* SmiSdkVpn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0C514462512F4C2009924EE /* SmiSdkVpn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CBB6DB118A67461210FBB76B /* Pods_Escola_em_Casa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581BBFFBBFC7AE1DAFFF5CB2 /* Pods_Escola_em_Casa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +43,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		581BBFFBBFC7AE1DAFFF5CB2 /* Pods_Escola_em_Casa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Escola_em_Casa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD919F5E25363CB700F637FD /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		AD919F6025363D9B00F637FD /* FAQTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewCell.swift; sourceTree = "<group>"; };
 		B058200024E3249A00ADB655 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B058200224E324A500ADB655 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		B058200424E324AF00ADB655 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -58,6 +64,8 @@
 		B093148924BBFEBF00F42961 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B09C247A24F89EB9000A3D4A /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		B0C514462512F4C2009924EE /* SmiSdkVpn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmiSdkVpn.framework; sourceTree = "<group>"; };
+		B648E4390808AE5D9799FCEA /* Pods-Escola em Casa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Escola em Casa.release.xcconfig"; path = "Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa.release.xcconfig"; sourceTree = "<group>"; };
+		E2AE7FC11A2B7C656E36EDB7 /* Pods-Escola em Casa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Escola em Casa.debug.xcconfig"; path = "Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +77,23 @@
 				B058200324E324A500ADB655 /* NetworkExtension.framework in Frameworks */,
 				B0C514482512F4D0009924EE /* SmiSdkVpn.framework in Frameworks */,
 				B058200524E324AF00ADB655 /* SystemConfiguration.framework in Frameworks */,
+				CBB6DB118A67461210FBB76B /* Pods_Escola_em_Casa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9535321A0943C2D181E324EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2AE7FC11A2B7C656E36EDB7 /* Pods-Escola em Casa.debug.xcconfig */,
+				B648E4390808AE5D9799FCEA /* Pods-Escola em Casa.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B04429C624C8062100EF3925 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +103,8 @@
 				B06D301324C816B2004FCD50 /* HowAccessClassRoomViewController.swift */,
 				B06D301524C8178F004FCD50 /* SiteWebViewController.swift */,
 				B09C247A24F89EB9000A3D4A /* LoadingViewController.swift */,
+				AD919F5E25363CB700F637FD /* FAQViewController.swift */,
+				AD919F6025363D9B00F637FD /* FAQTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -94,6 +115,7 @@
 				B058200424E324AF00ADB655 /* SystemConfiguration.framework */,
 				B058200224E324A500ADB655 /* NetworkExtension.framework */,
 				B058200024E3249A00ADB655 /* CoreTelephony.framework */,
+				581BBFFBBFC7AE1DAFFF5CB2 /* Pods_Escola_em_Casa.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -104,6 +126,7 @@
 				B093144E24BBEC9300F42961 /* Escola em Casa */,
 				B093144D24BBEC9300F42961 /* Products */,
 				B0581FFF24E3249A00ADB655 /* Frameworks */,
+				9535321A0943C2D181E324EF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,10 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B093146224BBEC9600F42961 /* Build configuration list for PBXNativeTarget "Escola em Casa" */;
 			buildPhases = (
+				9F0CC3B1A1B617286C5B2055 /* [CP] Check Pods Manifest.lock */,
 				B093144824BBEC9300F42961 /* Sources */,
 				B093144924BBEC9300F42961 /* Frameworks */,
 				B093144A24BBEC9300F42961 /* Resources */,
 				B0581FFE24E3248700ADB655 /* Embed Frameworks */,
+				26A4D6795581AB30B3F097A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,6 +223,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26A4D6795581AB30B3F097A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F0CC3B1A1B617286C5B2055 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Escola em Casa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B093144824BBEC9300F42961 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -209,7 +276,9 @@
 				B09C247B24F89EB9000A3D4A /* LoadingViewController.swift in Sources */,
 				B093145424BBEC9300F42961 /* GCWebViewController.swift in Sources */,
 				B093146624BBF36800F42961 /* AboutViewController.swift in Sources */,
+				AD919F5F25363CB700F637FD /* FAQViewController.swift in Sources */,
 				B093145024BBEC9300F42961 /* AppDelegate.swift in Sources */,
+				AD919F6125363D9B00F637FD /* FAQTableViewCell.swift in Sources */,
 				B06D301424C816B2004FCD50 /* HowAccessClassRoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +421,7 @@
 		};
 		B093146324BBEC9600F42961 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2AE7FC11A2B7C656E36EDB7 /* Pods-Escola em Casa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Escola em Casa/Escola em Casa.entitlements";
@@ -388,6 +458,7 @@
 		};
 		B093146424BBEC9600F42961 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B648E4390808AE5D9799FCEA /* Pods-Escola em Casa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Escola em Casa/Escola em Casa.entitlements";
