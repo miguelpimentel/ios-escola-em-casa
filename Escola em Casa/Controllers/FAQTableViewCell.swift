@@ -46,6 +46,23 @@ class FAQTableViewCell: UITableViewCell {
         return stackView
     }()
 
+    private lazy var horizontalStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .horizontal
+        stackView.alignment = .fill
+        stackView.spacing = 10
+
+        return stackView
+    }()
+
+    private lazy var selectorImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "ic_arrow_down")
+
+        return imageView
+    }()
+    
+
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.text = "O governo pagará pelo uso da plataforma Meet Google?"
@@ -86,7 +103,6 @@ class FAQTableViewCell: UITableViewCell {
         }
 
         titleLabel.snp.makeConstraints {
-            $0.width.equalToSuperview()
             $0.height.greaterThanOrEqualTo(20)
         }
 
