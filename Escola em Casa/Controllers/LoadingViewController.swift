@@ -15,21 +15,22 @@ class LoadingViewController: UIViewController {
 
     @objc func receivedStateChage(notification: NSNotification){
         print("entrou-received-stated-change")
-//        let sr = notification.object as! SmiResult
+
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        
         let resultViewController = storyBoard.instantiateViewController(withIdentifier: "ResultView") as! UITabBarController
         UIApplication.shared.keyWindow?.rootViewController =  resultViewController
-//
-//        if sr.sdState==SdState.SD_AVAILABLE {
-//            // TODO: show a banner or message to user, indicating that the data
-//            //    usage is sponsored and charges do not apply to user data plan
-//        }
-//        else if sr.sdState==SdState.SD_NOT_AVAILABLE {
-//            // TODO: show a banner or message to user, indicating that the data
-//            //    usage is NOT sponsored and charges apply to user data plan
-//        }
-//        else if sr.sdState==SdState.SD_WIFI {
-//        }
+
+        guard let smiResult = notification.object as? SmiResult else { return }
+
+        if smiResult.sdState == SdState.SD_AVAILABLE {
+            // TODO: show a banner or message to user, indicating that the data
+            //    usage is sponsored and charges do not apply to user data plan
+        } else if smiResult.sdState == SdState.SD_NOT_AVAILABLE {
+            // TODO: show a banner or message to user, indicating that the data
+            //    usage is NOT sponsored and charges apply to user data plan
+        } else if smiResult.sdState == SdState.SD_WIFI {
+            // TODO: show a banner or message to user, indicating that the data
+            //    usage is NOT sponsored and charges apply to user data plan
+        }
     }
 }
