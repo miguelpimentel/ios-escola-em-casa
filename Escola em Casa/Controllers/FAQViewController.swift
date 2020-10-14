@@ -19,7 +19,6 @@ class FAQViewController: UIViewController {
             tableView.delegate = self
             tableView.dataSource = self
 
-            tableView.separatorStyle = .none
             tableView.tableFooterView = UIView() // Remove empty lines
             tableView.estimatedRowHeight = 2.0
             tableView.rowHeight = UITableView.automaticDimension
@@ -41,7 +40,8 @@ extension FAQViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = FAQTableViewCell()
         cell.setup()
-        cell.isExpanded = false
+        cell.delegate = self
+        cell.isExpandable = false
 
         return cell
     }
@@ -52,23 +52,25 @@ extension FAQViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let cell = tableView.cellForRow(at: indexPath) as? FAQTableViewCell else { return }
 
-        UIView.animate(withDuration: 0.3, animations: {
-            tableView.beginUpdates()
-            cell.isExpanded = !cell.isExpanded
-            tableView.scrollToRow(at: indexPath, at: UITableView.ScrollPosition.top, animated: true)
-            tableView.reloadData()
-            tableView.endUpdates()
-        })
+        if cell.isExpandable {
+            cell.isExpandable = false
+        } else {
+            cell.isExpandable = true
+        }
     }
 
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        guard let cell = tableView.cellForRow(at: indexPath) as? FAQTableViewCell else { return }
+        if let cell = tableView.cellForRow(at: indexPath) as? FAQTableViewCell {
+            cell.isExpandable = false
+        }
+    }
+}
 
-        UIView.animate(withDuration: 0.3, animations: {
-            tableView.beginUpdates()
-            cell.isExpanded = false
-            tableView.endUpdates()
-            tableView.reloadData()
-        })
+extension FAQViewController: FAQTableViewCellDelegate {
+
+    func willLayoutChange(_ cell: FAQTableViewCell) {
+        self.tableView.beginUpdates()
+        self.tableView.setNeedsDisplay()
+        self.tableView.endUpdates()
     }
 }

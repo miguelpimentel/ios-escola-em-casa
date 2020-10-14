@@ -18,17 +18,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JN8-Z5-hvl">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="129.5" width="414" height="683.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mM-zl-awX">
+                                <rect key="frame" x="20" y="64" width="374" height="45.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                <color key="textColor" red="0.1594236195" green="0.64019423720000002" blue="0.9176812768" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="N28-gH-Pbg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="N28-gH-Pbg" firstAttribute="trailing" secondItem="6mM-zl-awX" secondAttribute="trailing" constant="20" id="4Hk-c6-YOq"/>
                             <constraint firstItem="JN8-Z5-hvl" firstAttribute="leading" secondItem="N28-gH-Pbg" secondAttribute="leading" id="8Ni-d3-OJy"/>
                             <constraint firstItem="N28-gH-Pbg" firstAttribute="bottom" secondItem="JN8-Z5-hvl" secondAttribute="bottom" id="B4u-n5-ArQ"/>
                             <constraint firstItem="N28-gH-Pbg" firstAttribute="trailing" secondItem="JN8-Z5-hvl" secondAttribute="trailing" id="FY1-ii-7cf"/>
-                            <constraint firstItem="JN8-Z5-hvl" firstAttribute="top" secondItem="N28-gH-Pbg" secondAttribute="top" id="J1v-fZ-6fk"/>
+                            <constraint firstItem="6mM-zl-awX" firstAttribute="top" secondItem="N28-gH-Pbg" secondAttribute="top" constant="20" id="RLQ-Jk-Y3A"/>
+                            <constraint firstItem="JN8-Z5-hvl" firstAttribute="top" secondItem="6mM-zl-awX" secondAttribute="bottom" constant="20" id="jgh-T6-kGA"/>
+                            <constraint firstItem="6mM-zl-awX" firstAttribute="leading" secondItem="N28-gH-Pbg" secondAttribute="leading" constant="20" id="up8-q4-BGf"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dúvidas Frequentes" image="help" selectedImage="help-full" id="dFu-9P-Tkw"/>
@@ -276,13 +285,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Essa operação pode demorar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tf1-v6-azG">
-                                <rect key="frame" x="20" y="149.5" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="20" y="149.5" width="374" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alguns minutos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9Z-ox-WwG">
-                                <rect key="frame" x="20" y="175.5" width="374" height="21"/>
+                                <rect key="frame" x="20" y="174.5" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
