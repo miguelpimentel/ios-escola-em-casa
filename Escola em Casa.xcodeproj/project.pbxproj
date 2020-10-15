@@ -17,6 +17,7 @@
 		AD6BECAA2533BB0800040A04 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6BECA92533BB0800040A04 /* Loader.swift */; };
 		AD6BECAD2533BB5B00040A04 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6BECAC2533BB5B00040A04 /* Images.swift */; };
 		AD9D98CC252F975900CAAD6A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9D98CB252F975900CAAD6A /* Coordinator.swift */; };
+		AD9F540E2537D2DF00A8A28F /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9F540D2537D2DF00A8A28F /* Storyboards.swift */; };
 		B058200124E3249A00ADB655 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200024E3249A00ADB655 /* CoreTelephony.framework */; };
 		B058200324E324A500ADB655 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200224E324A500ADB655 /* NetworkExtension.framework */; };
 		B058200524E324AF00ADB655 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200424E324AF00ADB655 /* SystemConfiguration.framework */; };
@@ -62,6 +63,7 @@
 		AD6BECA92533BB0800040A04 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		AD6BECAC2533BB5B00040A04 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		AD9D98CB252F975900CAAD6A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		AD9F540D2537D2DF00A8A28F /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		B058200024E3249A00ADB655 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B058200224E324A500ADB655 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		B058200424E324AF00ADB655 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -78,7 +80,7 @@
 		B093145F24BBEC9600F42961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B093146524BBF36800F42961 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		B093148924BBFEBF00F42961 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B09C247A24F89EB9000A3D4A /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		B09C247A24F89EB9000A3D4A /* LoadingViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
 		B0C514462512F4C2009924EE /* SmiSdkVpn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmiSdkVpn.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +124,7 @@
 				AD4E81B4252A7DBF000F4AFC /* AppDefaultsKeys.swift */,
 				AD4E81B1252A7D61000F4AFC /* SessionManager.swift */,
 				AD6BECA62533ACE300040A04 /* NetworkManager.swift */,
+				AD9F540D2537D2DF00A8A28F /* Storyboards.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				B093145624BBEC9300F42961 /* WikiWebViewController.swift in Sources */,
 				B06D301624C8178F004FCD50 /* SiteWebViewController.swift in Sources */,
 				AD4E81AB252A7ACA000F4AFC /* OnboardingView.swift in Sources */,
+				AD9F540E2537D2DF00A8A28F /* Storyboards.swift in Sources */,
 				B09C247B24F89EB9000A3D4A /* LoadingViewController.swift in Sources */,
 				B093145424BBEC9300F42961 /* GCWebViewController.swift in Sources */,
 				B093146624BBF36800F42961 /* AboutViewController.swift in Sources */,

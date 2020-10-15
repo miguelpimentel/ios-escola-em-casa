@@ -24,7 +24,7 @@ class AppCoordinator: Coordinator {
     init(with window: UIWindow) {
         self.window = window
         super.init()
-        self.navigationController.navigationBar.isTranslucent = false
+        self.navigationController.navigationBar.isHidden = true
         self.window.rootViewController = rootViewController
         self.window.makeKeyAndVisible()
     }
@@ -32,21 +32,9 @@ class AppCoordinator: Coordinator {
     // MARK: - Public methods
 
     override func start() {
-        NetworkManager().verifyConnection()
-        guard let viewController = instaciateMainStoryboard() as? UITabBarController else { return }
+        let viewController = Storyboards.loading.getViewController()
         navigationController.pushViewController(viewController, animated: true)
     }
-
-    private func instaciateMainStoryboard() -> UIViewController {
-        let storyboard = UIStoryboard(name: Storyboard.main.rawValue, bundle: .main)
-        return storyboard.instantiateViewController(withIdentifier: ViewController.main.rawValue)
-    }
-
-    private enum Storyboard: String {
-        case main = "Main"
-    }
-
-    private enum ViewController: String {
-        case main = "ResultView"
-    }
 }
+
+
