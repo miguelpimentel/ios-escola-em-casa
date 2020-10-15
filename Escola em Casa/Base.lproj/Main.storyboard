@@ -90,14 +90,14 @@
                                 <rect key="frame" x="122" y="54" width="170" height="133.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFJ-Lk-MXR">
-                                <rect key="frame" x="10" y="346" width="394" height="124.5"/>
+                                <rect key="frame" x="10" y="352" width="394" height="112"/>
                                 <string key="text">O aplicativo Escola em Casa DF tem como objetivo ser uma alternativa a mais de acesso à plataforma adotada para o ensino público à distância do Governo do Distrito Federal, o Google Classroom. Nesta primeira versão, a cobrança reversa ainda não estará disponível.</string>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnT-tW-3GE">
-                                <rect key="frame" x="67" y="511" width="280" height="33"/>
+                                <rect key="frame" x="67" y="504.5" width="280" height="33"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Como acessar o Google Sala de Aula"/>
                                 <connections>
@@ -105,13 +105,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Links Importantes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITc-nr-ldR">
-                                <rect key="frame" x="135" y="554" width="144" height="21"/>
+                                <rect key="frame" x="135" y="547.5" width="144" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AB-3z-OWx">
-                                <rect key="frame" x="124" y="585" width="166" height="33"/>
+                                <rect key="frame" x="124" y="578.5" width="166" height="33"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Escola em Casa (Site)"/>
                                 <connections>
@@ -119,7 +119,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Problemas para acessar o Google Sala de Aula?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTv-UB-4vx">
-                                <rect key="frame" x="10" y="480.5" width="394" height="20.5"/>
+                                <rect key="frame" x="10" y="474" width="394" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

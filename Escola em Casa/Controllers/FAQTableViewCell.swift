@@ -9,16 +9,6 @@
 import UIKit
 import SnapKit
 
-protocol Theme: class {
-    static var primaryColor: UIColor { get}
-}
-
-class AppColors: Theme {
-
-    static var primaryColor: UIColor {
-        return UIColor(displayP3Red: 0.2667, green: 0.5725, blue: 0.8745, alpha: 1.0)
-    }
-}
 
 protocol FAQTableViewCellDelegate: class {
     func willLayoutChange(_ cell: FAQTableViewCell)

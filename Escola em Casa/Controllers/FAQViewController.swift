@@ -12,8 +12,6 @@ class FAQViewController: UIViewController {
 
     // MARK: - Properties
 
-    var content = [1]
-
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.delegate = self
@@ -24,10 +22,11 @@ class FAQViewController: UIViewController {
             tableView.rowHeight = UITableView.automaticDimension
         }
     }
+
+    // MARK: - Life Cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 }
 

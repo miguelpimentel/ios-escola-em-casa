@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		AD919F5F25363CB700F637FD /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD919F5E25363CB700F637FD /* FAQViewController.swift */; };
 		AD919F6125363D9B00F637FD /* FAQTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD919F6025363D9B00F637FD /* FAQTableViewCell.swift */; };
+		ADA7B0C72538626000F9B8AE /* ThemeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7B0C62538626000F9B8AE /* ThemeDataSource.swift */; };
+		ADA7B0C92538627C00F9B8AE /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7B0C82538627C00F9B8AE /* AppColors.swift */; };
 		B058200124E3249A00ADB655 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200024E3249A00ADB655 /* CoreTelephony.framework */; };
 		B058200324E324A500ADB655 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200224E324A500ADB655 /* NetworkExtension.framework */; };
 		B058200524E324AF00ADB655 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200424E324AF00ADB655 /* SystemConfiguration.framework */; };
@@ -46,6 +48,8 @@
 		581BBFFBBFC7AE1DAFFF5CB2 /* Pods_Escola_em_Casa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Escola_em_Casa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD919F5E25363CB700F637FD /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		AD919F6025363D9B00F637FD /* FAQTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewCell.swift; sourceTree = "<group>"; };
+		ADA7B0C62538626000F9B8AE /* ThemeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeDataSource.swift; sourceTree = "<group>"; };
+		ADA7B0C82538627C00F9B8AE /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		B058200024E3249A00ADB655 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B058200224E324A500ADB655 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		B058200424E324AF00ADB655 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -90,8 +94,16 @@
 				E2AE7FC11A2B7C656E36EDB7 /* Pods-Escola em Casa.debug.xcconfig */,
 				B648E4390808AE5D9799FCEA /* Pods-Escola em Casa.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		ADA7B0C52538624D00F9B8AE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				ADA7B0C62538626000F9B8AE /* ThemeDataSource.swift */,
+				ADA7B0C82538627C00F9B8AE /* AppColors.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		B04429C624C8062100EF3925 /* Controllers */ = {
@@ -143,6 +155,7 @@
 			children = (
 				B0C514462512F4C2009924EE /* SmiSdkVpn.framework */,
 				B058200624E324EB00ADB655 /* Escola em Casa.entitlements */,
+				ADA7B0C52538624D00F9B8AE /* Protocols */,
 				B04429C624C8062100EF3925 /* Controllers */,
 				B093148924BBFEBF00F42961 /* SceneDelegate.swift */,
 				B093144F24BBEC9300F42961 /* AppDelegate.swift */,
@@ -274,10 +287,12 @@
 				B093145624BBEC9300F42961 /* WikiWebViewController.swift in Sources */,
 				B06D301624C8178F004FCD50 /* SiteWebViewController.swift in Sources */,
 				B09C247B24F89EB9000A3D4A /* LoadingViewController.swift in Sources */,
+				ADA7B0C72538626000F9B8AE /* ThemeDataSource.swift in Sources */,
 				B093145424BBEC9300F42961 /* GCWebViewController.swift in Sources */,
 				B093146624BBF36800F42961 /* AboutViewController.swift in Sources */,
 				AD919F5F25363CB700F637FD /* FAQViewController.swift in Sources */,
 				B093145024BBEC9300F42961 /* AppDelegate.swift in Sources */,
+				ADA7B0C92538627C00F9B8AE /* AppColors.swift in Sources */,
 				AD919F6125363D9B00F637FD /* FAQTableViewCell.swift in Sources */,
 				B06D301424C816B2004FCD50 /* HowAccessClassRoomViewController.swift in Sources */,
 			);
