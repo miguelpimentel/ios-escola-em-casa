@@ -11,6 +11,8 @@
 		AD919F6125363D9B00F637FD /* FAQTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD919F6025363D9B00F637FD /* FAQTableViewCell.swift */; };
 		ADA7B0C72538626000F9B8AE /* ThemeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7B0C62538626000F9B8AE /* ThemeDataSource.swift */; };
 		ADA7B0C92538627C00F9B8AE /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA7B0C82538627C00F9B8AE /* AppColors.swift */; };
+		B015A9E02531001000794615 /* SmiSdkVpn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B015A9DE2531000A00794615 /* SmiSdkVpn.framework */; };
+		B015A9E12531001000794615 /* SmiSdkVpn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B015A9DE2531000A00794615 /* SmiSdkVpn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B058200124E3249A00ADB655 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200024E3249A00ADB655 /* CoreTelephony.framework */; };
 		B058200324E324A500ADB655 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200224E324A500ADB655 /* NetworkExtension.framework */; };
 		B058200524E324AF00ADB655 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200424E324AF00ADB655 /* SystemConfiguration.framework */; };
@@ -37,7 +39,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B0C514492512F4D0009924EE /* SmiSdkVpn.framework in Embed Frameworks */,
+				B015A9E12531001000794615 /* SmiSdkVpn.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +52,7 @@
 		AD919F6025363D9B00F637FD /* FAQTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewCell.swift; sourceTree = "<group>"; };
 		ADA7B0C62538626000F9B8AE /* ThemeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeDataSource.swift; sourceTree = "<group>"; };
 		ADA7B0C82538627C00F9B8AE /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		B015A9DE2531000A00794615 /* SmiSdkVpn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmiSdkVpn.framework; sourceTree = "<group>"; };
 		B058200024E3249A00ADB655 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B058200224E324A500ADB655 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		B058200424E324AF00ADB655 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -79,7 +82,7 @@
 			files = (
 				B058200124E3249A00ADB655 /* CoreTelephony.framework in Frameworks */,
 				B058200324E324A500ADB655 /* NetworkExtension.framework in Frameworks */,
-				B0C514482512F4D0009924EE /* SmiSdkVpn.framework in Frameworks */,
+				B015A9E02531001000794615 /* SmiSdkVpn.framework in Frameworks */,
 				B058200524E324AF00ADB655 /* SystemConfiguration.framework in Frameworks */,
 				CBB6DB118A67461210FBB76B /* Pods_Escola_em_Casa.framework in Frameworks */,
 			);
@@ -153,7 +156,7 @@
 		B093144E24BBEC9300F42961 /* Escola em Casa */ = {
 			isa = PBXGroup;
 			children = (
-				B0C514462512F4C2009924EE /* SmiSdkVpn.framework */,
+				B015A9DE2531000A00794615 /* SmiSdkVpn.framework */,
 				B058200624E324EB00ADB655 /* Escola em Casa.entitlements */,
 				ADA7B0C52538624D00F9B8AE /* Protocols */,
 				B04429C624C8062100EF3925 /* Controllers */,
@@ -451,6 +454,8 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/smisdkvpn-ios_3.7.8",
 					"$(PROJECT_DIR)/Escola\\ em\\ Casa",
+					"$(PROJECT_DIR)/Escola\\ em\\ Casa",
+					"$(PROJECT_DIR)/Escola\\ em\\ Casa",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "VPN_API=1";
 				INFOPLIST_FILE = "Escola em Casa/Info.plist";
@@ -487,6 +492,8 @@
 					"$(PROJECT_DIR)/Escola\\ em\\ Casa",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/smisdkvpn-ios_3.7.8",
+					"$(PROJECT_DIR)/Escola\\ em\\ Casa",
+					"$(PROJECT_DIR)/Escola\\ em\\ Casa",
 					"$(PROJECT_DIR)/Escola\\ em\\ Casa",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "VPN_API=1";

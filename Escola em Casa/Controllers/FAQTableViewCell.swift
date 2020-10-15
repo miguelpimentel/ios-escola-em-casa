@@ -66,7 +66,7 @@ class FAQTableViewCell: UITableViewCell {
         let style = NSMutableParagraphStyle()
         let textView = UITextView()
         textView.font = UIFont(name: "HelveticaNeue-Light", size: 14)
-        textView.textColor = .lightGray
+        textView.textColor = .gray
 
         return textView
     }()
