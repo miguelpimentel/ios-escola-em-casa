@@ -34,14 +34,15 @@ class FAQViewController: UIViewController {
 extension FAQViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return FAQModels.content.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = FAQTableViewCell()
-        cell.setup()
+        
+        cell.setup(FAQModels.content[indexPath.row])
         cell.delegate = self
-        cell.isExpandable = false
+        cell.isExpanded = false
 
         return cell
     }
@@ -52,16 +53,16 @@ extension FAQViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let cell = tableView.cellForRow(at: indexPath) as? FAQTableViewCell else { return }
 
-        if cell.isExpandable {
-            cell.isExpandable = false
+        if cell.isExpanded {
+            cell.isExpanded = false
         } else {
-            cell.isExpandable = true
+            cell.isExpanded = true
         }
     }
 
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         if let cell = tableView.cellForRow(at: indexPath) as? FAQTableViewCell {
-            cell.isExpandable = false
+            cell.isExpanded = false
         }
     }
 }
@@ -72,5 +73,28 @@ extension FAQViewController: FAQTableViewCellDelegate {
         self.tableView.beginUpdates()
         self.tableView.setNeedsDisplay()
         self.tableView.endUpdates()
+    }
+}
+
+struct FAQModels {
+
+    static var content: [FAQ] = [
+        FAQ(
+            title: "Os dados móveis de internet do aplicativo já estão sendo pagos pelo governo?",
+            description: "Os dados móveis de internet já estão sendo patrocinados (pagos) pelo Governo do Distrito Federal. No momento, é possivel fazer uso dos dados utilizando chips ativos das operadoras Claro e Tim"
+        ),
+        FAQ(
+            title: "O governo pagará pelo uso da plataforma Meet Google?",
+            description: "Mesmo quando liberado o patrocínio dos dados, não será pago pelo Governo o uso da plataforma Meet Google, pois só é possível utilizá-la através do seu próprio  aplicativo. É responsabilidade do governo arcar somente pelas plataformas que são abertas dentro do nosso próprio aplicativo, Escola em Casa DF."
+        ),
+        FAQ(
+            title: "Se eu rotear a internet do celular para o computador, os dados móveis de internet serão pagos pelo governo?",
+            description: "Não serão patrocinados (pagos) os dados móveis de internet quando roteados, ou compartilhados, com outros dispositivos e/ou computadores."
+        )
+    ]
+
+    struct FAQ {
+        var title: String
+        var description: String
     }
 }

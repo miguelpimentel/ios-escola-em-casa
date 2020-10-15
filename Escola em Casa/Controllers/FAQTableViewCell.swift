@@ -30,9 +30,9 @@ class FAQTableViewCell: UITableViewCell {
 
     var delegate: FAQTableViewCellDelegate?
 
-    var isExpandable: Bool = false {
+    var isExpanded: Bool = false {
         didSet {
-            descriptionTextView.isHidden = !isExpandable
+            descriptionTextView.isHidden = !isExpanded
             delegate?.willLayoutChange(self)
         }
     }
@@ -65,28 +65,30 @@ class FAQTableViewCell: UITableViewCell {
 
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "O governo pagará pelo uso da plataforma Meet Google?"
-        label.font = UIFont(name: "HelveticaNeue-Regular", size: 16)
-        label.numberOfLines = 2
+        label.font = UIFont(name: "HelveticaNeue-Medium", size: 16)
+        label.numberOfLines = 3
         label.textColor =  AppColors.primaryColor
 
         return label
     }()
 
     private lazy var descriptionTextView: UITextView = {
+        let style = NSMutableParagraphStyle()
         let textView = UITextView()
-        textView.font = UIFont(name: "HelveticaNeue-Regular", size: 14)
-        textView.textColor = .darkGray
-        textView.text = "Mesmo quando liberado o patrocínio dos dados, não será pago pelo Governo o uso da plataforma Meet Google, pois só é possível utilizá-la através do seu próprio  aplicativo. É responsabilidade do governo arcar somente pelas plataformas que são abertas dentro do nosso próprio aplicativo, Escola em Casa DF."
+        textView.font = UIFont(name: "HelveticaNeue-Light", size: 14)
+        textView.textColor = .lightGray
 
         return textView
     }()
 
     // MARK: - Methods
 
-    func setup() {
+    func setup(_ FAQ: FAQModels.FAQ) {
         setupViews()
         setupConstraints()
+
+        titleLabel.text = FAQ.title
+        descriptionTextView.text = FAQ.description
     }
 
     private func setupViews() {
@@ -103,12 +105,12 @@ class FAQTableViewCell: UITableViewCell {
         }
 
         titleLabel.snp.makeConstraints {
-            $0.height.greaterThanOrEqualTo(20)
+            $0.height.greaterThanOrEqualTo(15)
         }
 
         descriptionTextView.snp.makeConstraints {
             $0.width.equalToSuperview()
-            $0.height.greaterThanOrEqualTo(100)
+            $0.height.greaterThanOrEqualTo(110)
         }
     }
 }
