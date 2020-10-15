@@ -1,6 +1,0 @@
-framework module Pods_Escola_em_Casa {
-  umbrella header "Pods-Escola em Casa-umbrella.h"
-
-  export *
-  module * { export * }
-}
