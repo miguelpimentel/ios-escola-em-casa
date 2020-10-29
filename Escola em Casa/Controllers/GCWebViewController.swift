@@ -2,19 +2,27 @@ import UIKit
 import WebKit
 
 class GCWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
+
+    // MARK: - Properties
+
     @IBOutlet weak var activity: UIActivityIndicatorView!
-    var webView: WKWebView!
+
+    lazy var webView: WKWebView = {
+        var webView = WKWebView()
+        return webView
+    }()
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         activity.stopAnimating()
     }
+
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) { }
     
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         activity.stopAnimating()
     }
     
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
-
         if navigationAction.targetFrame == nil {
             if let host = navigationAction.request.url?.host {
                 let url = (navigationAction.request.url?.absoluteString ?? "")
@@ -23,6 +31,7 @@ class GCWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate 
                 }
             }
         }
+
         return nil
     }
     
@@ -76,52 +85,59 @@ class GCWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate 
     
     override func loadView() {
         super.loadView()
-        
-        let statusBarHeight = UIApplication.shared.statusBarFrame.height
-        
-        let screenSize: CGRect = UIScreen.main.bounds
-        let subView = UIView(frame: CGRect(x: 0, y: statusBarHeight, width: screenSize.width, height: screenSize.height-statusBarHeight))
-        
-        view.addSubview(subView)
-        
-        let jsCodeEmailBlocker = "javascript:(function f(e) {" +
-            "var email = document.getElementsByName('identifier');" +
-            "var submitBtn = document.getElementsByClassName('VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP5yc AjY5Oe DuMIQc qIypjc TrZEUc')[0];" +
+        setupViews()
+    }
 
-            "email[0].oninput = function(value) {" +
-                "if(!/^\\w?([\\.-]?\\w+)*(@)?((e(d(u)?)?)?|(e(s(t(u(d(a(n(t(e)?)?)?)?)?)?)?)?)?)?(\\.)?(s(e(\\.(d(f(\\.(g(o(v(\\.(b(r)?)?)?)?)?)?)?)?)?)?)?)?$/.test(email[0].value)){" +
-                    "email[0].value = email[0].value.split('@')[0];" +
-                    "alert('São permitidos apenas emails com domínio: @edu.se.df.gov.br ou @estudante.se.df.gov.br ou @se.df.gov.br');" +
-                    "return false;" +
-                "}" +
-            "}" +
-        "})()"
-        
-        let jsCodeCreateAccountHider = "javascript:(function f() {" +
-            "document.getElementsByClassName('OIPlvf')[0].style.display='none'; " +
-            "document.getElementsByClassName('Y4dIwd')[0].innerHTML = 'Use sua conta Google Sala De Aula (@edu.se.df.gov.br ou @estudante.se.df.gov.br ou @se.df.gov.br)'" +
-        "})()"
-        
-        
-        let jsCodeFixBackButton = "javascript:(function f() {" +
-            "document.getElementsByClassName('docs-ml-header-item docs-ml-header-drive-link')[0].style.display='none'; " +
-        "})()"
-        
-        let jsScriptCreateAccountHider = WKUserScript(source: jsCodeCreateAccountHider, injectionTime: .atDocumentEnd, forMainFrameOnly: false)
-        let jsScriptEmailBlocker = WKUserScript(source: jsCodeEmailBlocker, injectionTime: .atDocumentEnd, forMainFrameOnly: false)
-        let jsScriptFixBackButton = WKUserScript(source: jsCodeFixBackButton, injectionTime: .atDocumentEnd, forMainFrameOnly: false)
+    // MARK: - Setup
 
-        webView = WKWebView(frame : subView.frame)
-        
-        webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1"
-        
+    private func setupViews() {
+        webView = WKWebView(frame : view.frame)
         view.addSubview(webView)
+
+        setupWebView()
+    }
+
+    private func setupWebView() {
+        let injectors: [InjectorType] = [.emailBlocker, .accountHider, .fixBackButton]
+
+        webView.customUserAgent = InjectorType.userAgent.getValue()
         webView.navigationDelegate = self
         webView.uiDelegate = self
-        
-        webView.configuration.userContentController.addUserScript(jsScriptCreateAccountHider)
-        webView.configuration.userContentController.addUserScript(jsScriptEmailBlocker)
-        webView.configuration.userContentController.addUserScript(jsScriptFixBackButton)
+
+        InjectorManager.inject(injectors, into: webView)
     }
-    
+}
+
+enum WebViewType {
+    case classroom
+    case wikipedia
+}
+
+enum InjectorType: String {
+    case emailBlocker = "injectorEmailBlocker"
+    case accountHider = "injectorHideEmailAccount"
+    case fixBackButton = "injectorFixButton"
+    case userAgent
+
+    func getValue() -> String {
+        return InfoPlistParser.getStringValue(forKey: self.rawValue)
+    }
+}
+
+struct InjectorManager {
+
+    static func inject(_ injectors: [InjectorType], into webView: WKWebView) {
+        injectors.forEach {
+            let script = WKUserScript(source: $0.getValue(), injectionTime: .atDocumentEnd, forMainFrameOnly: false)
+            webView.configuration.userContentController.addUserScript(script)
+        }
+    }
+}
+
+struct InfoPlistParser {
+
+    static func getStringValue(forKey key: String) -> String {
+        guard let value = Bundle.main.infoDictionary?[key] as? String else { fatalError("Could not found value for key: \(key)") }
+        return value
+    }
 }

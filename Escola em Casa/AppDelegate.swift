@@ -11,6 +11,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         SmiSdk.initSponsoredVPN("API-KEY", showSDMessage: false)
 
+        InfoPlistParser.getStringValue(forKey: "injectorEmailBlocker")
+
         return true
     }
 
