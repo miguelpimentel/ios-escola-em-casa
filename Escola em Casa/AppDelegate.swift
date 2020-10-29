@@ -7,11 +7,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-            
         SmiSdk.initSponsoredVPN("API-KEY", showSDMessage: false)
-
-        InfoPlistParser.getStringValue(forKey: "injectorEmailBlocker")
 
         return true
     }

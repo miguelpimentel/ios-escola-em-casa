@@ -108,36 +108,3 @@ class GCWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate 
     }
 }
 
-enum WebViewType {
-    case classroom
-    case wikipedia
-}
-
-enum InjectorType: String {
-    case emailBlocker = "injectorEmailBlocker"
-    case accountHider = "injectorHideEmailAccount"
-    case fixBackButton = "injectorFixButton"
-    case userAgent
-
-    func getValue() -> String {
-        return InfoPlistParser.getStringValue(forKey: self.rawValue)
-    }
-}
-
-struct InjectorManager {
-
-    static func inject(_ injectors: [InjectorType], into webView: WKWebView) {
-        injectors.forEach {
-            let script = WKUserScript(source: $0.getValue(), injectionTime: .atDocumentEnd, forMainFrameOnly: false)
-            webView.configuration.userContentController.addUserScript(script)
-        }
-    }
-}
-
-struct InfoPlistParser {
-
-    static func getStringValue(forKey key: String) -> String {
-        guard let value = Bundle.main.infoDictionary?[key] as? String else { fatalError("Could not found value for key: \(key)") }
-        return value
-    }
-}

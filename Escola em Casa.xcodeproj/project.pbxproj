@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD947DED254AE59100E61506 /* InjectableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD947DEC254AE59100E61506 /* InjectableManager.swift */; };
+		AD947DEF254AE5E400E61506 /* InjectorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD947DEE254AE5E400E61506 /* InjectorType.swift */; };
 		B015A9E02531001000794615 /* SmiSdkVpn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B015A9DE2531000A00794615 /* SmiSdkVpn.framework */; };
 		B015A9E12531001000794615 /* SmiSdkVpn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B015A9DE2531000A00794615 /* SmiSdkVpn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B058200124E3249A00ADB655 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200024E3249A00ADB655 /* CoreTelephony.framework */; };
@@ -40,6 +42,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD947DEC254AE59100E61506 /* InjectableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableManager.swift; sourceTree = "<group>"; };
+		AD947DEE254AE5E400E61506 /* InjectorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectorType.swift; sourceTree = "<group>"; };
 		B015A9DE2531000A00794615 /* SmiSdkVpn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmiSdkVpn.framework; sourceTree = "<group>"; };
 		B058200024E3249A00ADB655 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B058200224E324A500ADB655 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
@@ -75,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD947DEA254AE57800E61506 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				AD947DEB254AE57F00E61506 /* Injectable */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		AD947DEB254AE57F00E61506 /* Injectable */ = {
+			isa = PBXGroup;
+			children = (
+				AD947DEC254AE59100E61506 /* InjectableManager.swift */,
+				AD947DEE254AE5E400E61506 /* InjectorType.swift */,
+			);
+			path = Injectable;
+			sourceTree = "<group>";
+		};
 		B04429C624C8062100EF3925 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +139,7 @@
 		B093144E24BBEC9300F42961 /* Escola em Casa */ = {
 			isa = PBXGroup;
 			children = (
+				AD947DEA254AE57800E61506 /* Manager */,
 				B015A9DE2531000A00794615 /* SmiSdkVpn.framework */,
 				B058200624E324EB00ADB655 /* Escola em Casa.entitlements */,
 				B04429C624C8062100EF3925 /* Controllers */,
@@ -206,10 +228,12 @@
 				B093148A24BBFEBF00F42961 /* SceneDelegate.swift in Sources */,
 				B093145624BBEC9300F42961 /* WikiWebViewController.swift in Sources */,
 				B06D301624C8178F004FCD50 /* SiteWebViewController.swift in Sources */,
+				AD947DEF254AE5E400E61506 /* InjectorType.swift in Sources */,
 				B09C247B24F89EB9000A3D4A /* LoadingViewController.swift in Sources */,
 				B093145424BBEC9300F42961 /* GCWebViewController.swift in Sources */,
 				B093146624BBF36800F42961 /* AboutViewController.swift in Sources */,
 				B093145024BBEC9300F42961 /* AppDelegate.swift in Sources */,
+				AD947DED254AE59100E61506 /* InjectableManager.swift in Sources */,
 				B06D301424C816B2004FCD50 /* HowAccessClassRoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
