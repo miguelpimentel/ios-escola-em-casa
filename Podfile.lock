@@ -1,16 +1,24 @@
 PODS:
+  - paper-onboarding (6.1.5)
   - SnapKit (5.0.1)
+  - SwiftLint (0.40.3)
 
 DEPENDENCIES:
+  - paper-onboarding
   - SnapKit
+  - SwiftLint
 
 SPEC REPOS:
   trunk:
+    - paper-onboarding
     - SnapKit
+    - SwiftLint
 
 SPEC CHECKSUMS:
+  paper-onboarding: fede1799b1da6988f3788e3b71654583c6f3bce1
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftLint: dfd554ff0dff17288ee574814ccdd5cea85d76f7
 
-PODFILE CHECKSUM: 230f41ebafeac1860134dca054dd05e7568a1033
+PODFILE CHECKSUM: bc3db4353761258a2fbbff5f9cb5bb035074e014
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3

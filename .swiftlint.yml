@@ -1,0 +1,49 @@
+opt_in_rules: # some rules are only opt-in
+  - control_statement
+  - empty_count
+  - trailing_newline
+  - colon
+  - comma
+included:
+  - Escola em Casa
+excluded:
+  - Escola em Casa/Pods
+identifier_name:
+  min_length: 3
+  max_length: 90
+  warning: 91
+  error: 100
+  excluded:
+    - id
+    - y
+    - x
+    - i
+    - to
+type_body_length:
+  warning: 100
+  error: 200
+file_length:
+  warning: 400
+  error: 500
+function_body_length:
+  warning: 150
+  error: 250
+function_parameter_count:
+  warning: 8
+cyclomatic_complexity:
+  warning: 8
+vertical_whitespace:
+  severity: error
+type_name:
+  max_length: 60
+line_length:
+  warning: 150
+  error: 200
+  ignores_comments: true
+  ignores_function_declarations: true
+large_tuple:
+  warning: 3
+  error: 4
+nesting:
+  type_level:
+    warning: 2
