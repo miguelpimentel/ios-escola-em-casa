@@ -270,6 +270,7 @@
 				B093144A24BBEC9300F42961 /* Resources */,
 				B0581FFE24E3248700ADB655 /* Embed Frameworks */,
 				71DF7C59A1531D585186ABEF /* [CP] Embed Pods Frameworks */,
+				AD938F24255A06E90009310B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -365,6 +366,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		AD938F24255A06E90009310B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

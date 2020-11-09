@@ -4,11 +4,10 @@
 //
 //  Created by Miguel Pimentel on 13/10/20.
 //  Copyright © 2020 Laércio Silva de Sousa Júnior. All rights reserved.
-//
+//  swiftlint:disable line_length
 
 import UIKit
 import SnapKit
-
 
 protocol FAQTableViewCellDelegate: class {
     func willLayoutChange(_ cell: FAQTableViewCell)
@@ -51,7 +50,6 @@ class FAQTableViewCell: UITableViewCell {
 
         return imageView
     }()
-    
 
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
