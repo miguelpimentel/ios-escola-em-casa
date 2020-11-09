@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C6C74D6AFCE7374C508873B /* Pods_Escola_em_Casa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626E6F736A7826E8CBB1CEA5 /* Pods_Escola_em_Casa.framework */; };
+		191B74B990306D4FF4292118 /* Pods_Escola_em_Casa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF52A1036D8131C1354CBD7 /* Pods_Escola_em_Casa.framework */; };
 		AD4D000F25289963009CAF0E /* Viewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4D000E25289963009CAF0E /* Viewable.swift */; };
 		AD4D001125289A4E009CAF0E /* StoryboardViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4D001025289A4E009CAF0E /* StoryboardViewable.swift */; };
 		AD4E81AB252A7ACA000F4AFC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E81AA252A7ACA000F4AFC /* OnboardingView.swift */; };
 		AD4E81AF252A7B28000F4AFC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E81AE252A7B28000F4AFC /* OnboardingViewController.swift */; };
 		AD4E81B2252A7D61000F4AFC /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E81B1252A7D61000F4AFC /* SessionManager.swift */; };
 		AD4E81B5252A7DBF000F4AFC /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E81B4252A7DBF000F4AFC /* UserDefaultsKeys.swift */; };
+		AD835ECB2555C4EB00290C41 /* FAQTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD835EC92555C4EB00290C41 /* FAQTableViewCell.swift */; };
+		AD835ECC2555C4EB00290C41 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD835ECA2555C4EB00290C41 /* FAQViewController.swift */; };
+		AD835ECF2555C51500290C41 /* ThemeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD835ECD2555C51400290C41 /* ThemeDataSource.swift */; };
+		AD835ED02555C51500290C41 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD835ECE2555C51500290C41 /* AppColors.swift */; };
 		B015A9E02531001000794615 /* SmiSdkVpn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B015A9DE2531000A00794615 /* SmiSdkVpn.framework */; };
 		B015A9E12531001000794615 /* SmiSdkVpn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B015A9DE2531000A00794615 /* SmiSdkVpn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B058200124E3249A00ADB655 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200024E3249A00ADB655 /* CoreTelephony.framework */; };
@@ -47,15 +51,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5151DD80682D097B54570910 /* Pods-Escola em Casa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Escola em Casa.debug.xcconfig"; path = "Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa.debug.xcconfig"; sourceTree = "<group>"; };
-		626E6F736A7826E8CBB1CEA5 /* Pods_Escola_em_Casa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Escola_em_Casa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C8AC449380F473F3732452F /* Pods-Escola em Casa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Escola em Casa.release.xcconfig"; path = "Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa.release.xcconfig"; sourceTree = "<group>"; };
+		951205F204AC1612A6E5721C /* Pods-Escola em Casa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Escola em Casa.debug.xcconfig"; path = "Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa.debug.xcconfig"; sourceTree = "<group>"; };
 		AD4D000E25289963009CAF0E /* Viewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewable.swift; sourceTree = "<group>"; };
 		AD4D001025289A4E009CAF0E /* StoryboardViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewable.swift; sourceTree = "<group>"; };
 		AD4E81AA252A7ACA000F4AFC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		AD4E81AE252A7B28000F4AFC /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		AD4E81B1252A7D61000F4AFC /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		AD4E81B4252A7DBF000F4AFC /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		AD835EC92555C4EB00290C41 /* FAQTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQTableViewCell.swift; sourceTree = "<group>"; };
+		AD835ECA2555C4EB00290C41 /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		AD835ECD2555C51400290C41 /* ThemeDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThemeDataSource.swift; path = "Escola em Casa/Manager/Theme/ThemeDataSource.swift"; sourceTree = SOURCE_ROOT; };
+		AD835ECE2555C51500290C41 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppColors.swift; path = "Escola em Casa/Manager/Theme/AppColors.swift"; sourceTree = SOURCE_ROOT; };
+		AD919F5E25363CB700F637FD /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		AD919F6025363D9B00F637FD /* FAQTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewCell.swift; sourceTree = "<group>"; };
+		ADA7B0C62538626000F9B8AE /* ThemeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeDataSource.swift; sourceTree = "<group>"; };
+		ADA7B0C82538627C00F9B8AE /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		B015A9DE2531000A00794615 /* SmiSdkVpn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmiSdkVpn.framework; sourceTree = "<group>"; };
 		B058200024E3249A00ADB655 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B058200224E324A500ADB655 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
@@ -74,6 +84,8 @@
 		B093146524BBF36800F42961 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		B093148924BBFEBF00F42961 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B09C247A24F89EB9000A3D4A /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		C85B2362A6E48CDD36260576 /* Pods-Escola em Casa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Escola em Casa.release.xcconfig"; path = "Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa.release.xcconfig"; sourceTree = "<group>"; };
+		DFF52A1036D8131C1354CBD7 /* Pods_Escola_em_Casa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Escola_em_Casa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +97,7 @@
 				B058200324E324A500ADB655 /* NetworkExtension.framework in Frameworks */,
 				B015A9E02531001000794615 /* SmiSdkVpn.framework in Frameworks */,
 				B058200524E324AF00ADB655 /* SystemConfiguration.framework in Frameworks */,
-				1C6C74D6AFCE7374C508873B /* Pods_Escola_em_Casa.framework in Frameworks */,
+				191B74B990306D4FF4292118 /* Pods_Escola_em_Casa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +107,8 @@
 		22330FB490FCD0ED159B678C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5151DD80682D097B54570910 /* Pods-Escola em Casa.debug.xcconfig */,
-				9C8AC449380F473F3732452F /* Pods-Escola em Casa.release.xcconfig */,
+				951205F204AC1612A6E5721C /* Pods-Escola em Casa.debug.xcconfig */,
+				C85B2362A6E48CDD36260576 /* Pods-Escola em Casa.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -135,15 +147,54 @@
 		AD4E81B0252A7D54000F4AFC /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				AD4E81B4252A7DBF000F4AFC /* UserDefaultsKeys.swift */,
-				AD4E81B1252A7D61000F4AFC /* SessionManager.swift */,
+				AD835ED72555C67000290C41 /* Constants */,
+				AD835ED62555C66000290C41 /* Session */,
+				AD835ED52555C65200290C41 /* Theme */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		AD835EC32555C48600290C41 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				ADA7B0C62538626000F9B8AE /* ThemeDataSource.swift */,
+				AD919F5E25363CB700F637FD /* FAQViewController.swift */,
+				ADA7B0C82538627C00F9B8AE /* AppColors.swift */,
+				AD919F6025363D9B00F637FD /* FAQTableViewCell.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		AD835ED52555C65200290C41 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				AD835ECD2555C51400290C41 /* ThemeDataSource.swift */,
+				AD835ECE2555C51500290C41 /* AppColors.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		AD835ED62555C66000290C41 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				AD4E81B1252A7D61000F4AFC /* SessionManager.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		AD835ED72555C67000290C41 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				AD4E81B4252A7DBF000F4AFC /* UserDefaultsKeys.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		B04429C624C8062100EF3925 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AD835EC92555C4EB00290C41 /* FAQTableViewCell.swift */,
+				AD835ECA2555C4EB00290C41 /* FAQViewController.swift */,
 				B093145324BBEC9300F42961 /* GCWebViewController.swift */,
 				B093146524BBF36800F42961 /* AboutViewController.swift */,
 				B093145524BBEC9300F42961 /* WikiWebViewController.swift */,
@@ -161,7 +212,7 @@
 				B058200424E324AF00ADB655 /* SystemConfiguration.framework */,
 				B058200224E324A500ADB655 /* NetworkExtension.framework */,
 				B058200024E3249A00ADB655 /* CoreTelephony.framework */,
-				626E6F736A7826E8CBB1CEA5 /* Pods_Escola_em_Casa.framework */,
+				DFF52A1036D8131C1354CBD7 /* Pods_Escola_em_Casa.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,6 +224,7 @@
 				B093144D24BBEC9300F42961 /* Products */,
 				B0581FFF24E3249A00ADB655 /* Frameworks */,
 				22330FB490FCD0ED159B678C /* Pods */,
+				AD835EC32555C48600290C41 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,15 +239,14 @@
 		B093144E24BBEC9300F42961 /* Escola em Casa */ = {
 			isa = PBXGroup;
 			children = (
-				AD4E81B0252A7D54000F4AFC /* Manager */,
-				AD4E81A9252A7ABE000F4AFC /* Views */,
-				B04429C624C8062100EF3925 /* Controllers */,
 				B015A9DE2531000A00794615 /* SmiSdkVpn.framework */,
 				B058200624E324EB00ADB655 /* Escola em Casa.entitlements */,
 				AD4D000D25289952009CAF0E /* Enums */,
 				AD4D001225289AF1009CAF0E /* Extensions */,
 				AD4D000C25289940009CAF0E /* Protocols */,
+				AD4E81B0252A7D54000F4AFC /* Manager */,
 				B04429C624C8062100EF3925 /* Controllers */,
+				AD4E81A9252A7ABE000F4AFC /* Views */,
 				B093148924BBFEBF00F42961 /* SceneDelegate.swift */,
 				B093144F24BBEC9300F42961 /* AppDelegate.swift */,
 				B093145724BBEC9300F42961 /* Main.storyboard */,
@@ -213,12 +264,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B093146224BBEC9600F42961 /* Build configuration list for PBXNativeTarget "Escola em Casa" */;
 			buildPhases = (
-				C0BCC288377BE3A554682D1F /* [CP] Check Pods Manifest.lock */,
+				4FFFB8416A9437D55C84ED1A /* [CP] Check Pods Manifest.lock */,
 				B093144824BBEC9300F42961 /* Sources */,
 				B093144924BBEC9300F42961 /* Frameworks */,
 				B093144A24BBEC9300F42961 /* Resources */,
 				B0581FFE24E3248700ADB655 /* Embed Frameworks */,
-				871BE3A69841BED669963B74 /* [CP] Embed Pods Frameworks */,
+				71DF7C59A1531D585186ABEF /* [CP] Embed Pods Frameworks */,
+				AD938F24255A06E90009310B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -276,24 +328,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		871BE3A69841BED669963B74 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C0BCC288377BE3A554682D1F /* [CP] Check Pods Manifest.lock */ = {
+		4FFFB8416A9437D55C84ED1A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -315,6 +350,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		71DF7C59A1531D585186ABEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD938F24255A06E90009310B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -324,14 +393,18 @@
 			files = (
 				B093148A24BBFEBF00F42961 /* SceneDelegate.swift in Sources */,
 				AD4E81B5252A7DBF000F4AFC /* UserDefaultsKeys.swift in Sources */,
+				AD835ECF2555C51500290C41 /* ThemeDataSource.swift in Sources */,
 				B093145624BBEC9300F42961 /* WikiWebViewController.swift in Sources */,
 				AD4D000F25289963009CAF0E /* Viewable.swift in Sources */,
 				B06D301624C8178F004FCD50 /* SiteWebViewController.swift in Sources */,
 				AD4E81AB252A7ACA000F4AFC /* OnboardingView.swift in Sources */,
 				B09C247B24F89EB9000A3D4A /* LoadingViewController.swift in Sources */,
+				AD835ECB2555C4EB00290C41 /* FAQTableViewCell.swift in Sources */,
 				B093145424BBEC9300F42961 /* GCWebViewController.swift in Sources */,
 				AD4D001125289A4E009CAF0E /* StoryboardViewable.swift in Sources */,
 				B093146624BBF36800F42961 /* AboutViewController.swift in Sources */,
+				AD835ECC2555C4EB00290C41 /* FAQViewController.swift in Sources */,
+				AD835ED02555C51500290C41 /* AppColors.swift in Sources */,
 				AD4E81AF252A7B28000F4AFC /* OnboardingViewController.swift in Sources */,
 				B093145024BBEC9300F42961 /* AppDelegate.swift in Sources */,
 				B06D301424C816B2004FCD50 /* HowAccessClassRoomViewController.swift in Sources */,
@@ -477,7 +550,7 @@
 		};
 		B093146324BBEC9600F42961 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5151DD80682D097B54570910 /* Pods-Escola em Casa.debug.xcconfig */;
+			baseConfigurationReference = 951205F204AC1612A6E5721C /* Pods-Escola em Casa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Escola em Casa/Escola em Casa.entitlements";
@@ -516,7 +589,7 @@
 		};
 		B093146424BBEC9600F42961 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C8AC449380F473F3732452F /* Pods-Escola em Casa.release.xcconfig */;
+			baseConfigurationReference = C85B2362A6E48CDD36260576 /* Pods-Escola em Casa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Escola em Casa/Escola em Casa.entitlements";
