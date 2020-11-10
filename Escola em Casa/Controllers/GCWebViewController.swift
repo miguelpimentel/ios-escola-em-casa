@@ -11,17 +11,15 @@ class GCWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate 
         var webView = WKWebView()
         return webView
     }()
-    
+
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         activity.stopAnimating()
     }
 
-    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) { }
-    
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         activity.stopAnimating()
     }
-    
+
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
         if navigationAction.targetFrame == nil {
             if let host = navigationAction.request.url?.host {
@@ -34,16 +32,16 @@ class GCWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate 
 
         return nil
     }
-    
+
     func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
-        let ac = UIAlertController(title: "Alerta!", message: message, preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(ac, animated: true)
+        let alertController = UIAlertController(title: "Alerta!", message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alertController, animated: true)
         completionHandler()
     }
-    
+
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        
+
         if let host = navigationAction.request.url?.host {
             if host.contains("google.com") {
                 decisionHandler(.allow)
@@ -51,38 +49,38 @@ class GCWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate 
             }
             if host.contains("youtube.com") {
                 if let hostSource = navigationAction.sourceFrame.request.url?.host {
-                    if(hostSource.contains("google.com")) {
+                    if hostSource.contains("google.com") {
                         decisionHandler(.allow)
                         return
                     }
                 }
             }
         }
-        
+
         print("Request Bloqueada")
-        
+
         decisionHandler(.cancel)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let url = URL(string: "https://classroom.google.com/a/estudante.se.df.gov.br")!
-        
+
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
-        
+
         // add activity
         self.webView.addSubview(self.activity)
         self.activity.startAnimating()
         self.webView.navigationDelegate = self
         self.activity.hidesWhenStopped = true
-        
+
         let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
         toolbarItems = [refresh]
         navigationController?.isToolbarHidden = false
     }
-    
+
     override func loadView() {
         super.loadView()
         setupViews()
