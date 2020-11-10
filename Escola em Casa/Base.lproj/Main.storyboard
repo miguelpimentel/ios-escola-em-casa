@@ -12,89 +12,38 @@
         <!--Dúvidas Frequentes-->
         <scene sceneID="fnl-Wx-B7p">
             <objects>
-                <viewController id="XuF-NI-gxu" sceneMemberID="viewController">
+                <viewController id="XuF-NI-gxu" customClass="FAQViewController" customModule="Escola_em_Casa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3oZ-L6-5oF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dúvidas Frequentes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVd-85-mo0">
-                                <rect key="frame" x="112.5" y="44" width="189.5" height="26.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Os dados móveis de internet do aplicativo já estão sendo pagos pelo governo?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrf-Td-kAm">
-                                <rect key="frame" x="20" y="75.5" width="374" height="36"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZ6-Sy-EUV">
-                                <rect key="frame" x="20" y="116.5" width="374" height="72"/>
-                                <string key="text">Os dados móveis de internet já estão sendo patrocinados (pagos) pelo Governo do Distrito Federal. No momento, é possivel fazer uso dos dados utilizando chips ativos das operadoras Claro e Tim</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O governo pagará pelo uso da plataforma Meet Google?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guC-Z0-WIN">
-                                <rect key="frame" x="20" y="193.5" width="374" height="36"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhB-Vl-bTk">
-                                <rect key="frame" x="20" y="234.5" width="374" height="125.5"/>
-                                <string key="text">Mesmo quando liberado o patrocínio dos dados, não será pago pelo Governo o uso da plataforma Meet Google, pois só é possível utilizá-la através do seu próprio  aplicativo. É responsabilidade do governo arcar somente pelas plataformas que são abertas dentro do nosso próprio aplicativo, Escola em Casa DF.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Se eu rotear a internet do celular para o computador, os dados móveis de internet serão pagos pelo governo?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0M-ON-1x6">
-                                <rect key="frame" x="20" y="365" width="374" height="54"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtE-Um-eGb">
-                                <rect key="frame" x="20" y="424" width="374" height="54"/>
-                                <string key="text">Não serão patrocinados (pagos) os dados móveis de internet quando roteados, ou compartilhados, com outros dispositivos e/ou computadores.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JN8-Z5-hvl">
+                                <rect key="frame" x="0.0" y="129.5" width="414" height="683.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mM-zl-awX">
+                                <rect key="frame" x="20" y="64" width="374" height="45.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                <color key="textColor" red="0.1594236195" green="0.64019423720000002" blue="0.9176812768" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="N28-gH-Pbg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="cVd-85-mo0" firstAttribute="centerX" secondItem="3oZ-L6-5oF" secondAttribute="centerX" id="4FU-Su-4eH"/>
-                            <constraint firstItem="eZ6-Sy-EUV" firstAttribute="leading" secondItem="3oZ-L6-5oF" secondAttribute="leading" constant="20" id="54S-mu-D1U"/>
-                            <constraint firstItem="eZ6-Sy-EUV" firstAttribute="top" secondItem="Vrf-Td-kAm" secondAttribute="bottom" constant="5" id="6nx-Xu-i7d"/>
-                            <constraint firstItem="e0M-ON-1x6" firstAttribute="leading" secondItem="N28-gH-Pbg" secondAttribute="leading" constant="20" id="BTu-hz-eYW"/>
-                            <constraint firstAttribute="trailing" secondItem="eZ6-Sy-EUV" secondAttribute="trailing" constant="20" id="Bxm-T1-lbS"/>
-                            <constraint firstItem="LtE-Um-eGb" firstAttribute="leading" secondItem="3oZ-L6-5oF" secondAttribute="leading" constant="20" id="CMD-OR-Hks"/>
-                            <constraint firstItem="LtE-Um-eGb" firstAttribute="top" secondItem="e0M-ON-1x6" secondAttribute="bottom" constant="5" id="LdK-4c-3tp"/>
-                            <constraint firstItem="guC-Z0-WIN" firstAttribute="centerX" secondItem="3oZ-L6-5oF" secondAttribute="centerX" id="Nge-oA-IFj"/>
-                            <constraint firstAttribute="trailing" secondItem="Vrf-Td-kAm" secondAttribute="trailing" constant="20" id="Ucp-n7-Amb"/>
-                            <constraint firstItem="eZ6-Sy-EUV" firstAttribute="centerX" secondItem="3oZ-L6-5oF" secondAttribute="centerX" id="b1r-NT-Y59"/>
-                            <constraint firstItem="MhB-Vl-bTk" firstAttribute="centerX" secondItem="3oZ-L6-5oF" secondAttribute="centerX" id="c05-MW-He4"/>
-                            <constraint firstItem="MhB-Vl-bTk" firstAttribute="leading" secondItem="3oZ-L6-5oF" secondAttribute="leading" constant="20" id="gXD-9n-7Ys"/>
-                            <constraint firstItem="guC-Z0-WIN" firstAttribute="leading" secondItem="N28-gH-Pbg" secondAttribute="leading" constant="20" id="jCT-jb-GVJ"/>
-                            <constraint firstItem="Vrf-Td-kAm" firstAttribute="leading" secondItem="3oZ-L6-5oF" secondAttribute="leading" constant="20" id="jLd-jL-EKw"/>
-                            <constraint firstAttribute="trailing" secondItem="MhB-Vl-bTk" secondAttribute="trailing" constant="20" id="jfK-Ov-keL"/>
-                            <constraint firstAttribute="trailing" secondItem="LtE-Um-eGb" secondAttribute="trailing" constant="20" id="kA1-78-ItJ"/>
-                            <constraint firstItem="N28-gH-Pbg" firstAttribute="trailing" secondItem="e0M-ON-1x6" secondAttribute="trailing" constant="20" id="kLU-A8-FYq"/>
-                            <constraint firstItem="cVd-85-mo0" firstAttribute="top" secondItem="N28-gH-Pbg" secondAttribute="top" id="kzE-rX-c76"/>
-                            <constraint firstItem="LtE-Um-eGb" firstAttribute="centerX" secondItem="3oZ-L6-5oF" secondAttribute="centerX" id="mvY-yH-Gh4"/>
-                            <constraint firstItem="guC-Z0-WIN" firstAttribute="top" secondItem="eZ6-Sy-EUV" secondAttribute="bottom" constant="5" id="p1c-Fi-u6t"/>
-                            <constraint firstAttribute="trailing" secondItem="guC-Z0-WIN" secondAttribute="trailing" constant="20" id="pTW-xV-fJn"/>
-                            <constraint firstItem="MhB-Vl-bTk" firstAttribute="top" secondItem="guC-Z0-WIN" secondAttribute="bottom" constant="5" id="qj1-Lf-R99"/>
-                            <constraint firstItem="Vrf-Td-kAm" firstAttribute="centerX" secondItem="3oZ-L6-5oF" secondAttribute="centerX" id="r0A-I4-Suq"/>
-                            <constraint firstItem="Vrf-Td-kAm" firstAttribute="top" secondItem="cVd-85-mo0" secondAttribute="bottom" constant="5" id="tnS-86-iO2"/>
-                            <constraint firstItem="e0M-ON-1x6" firstAttribute="top" secondItem="MhB-Vl-bTk" secondAttribute="bottom" constant="5" id="uNy-aW-S3k"/>
-                            <constraint firstItem="e0M-ON-1x6" firstAttribute="centerX" secondItem="3oZ-L6-5oF" secondAttribute="centerX" id="xfQ-Zf-XLD"/>
+                            <constraint firstItem="N28-gH-Pbg" firstAttribute="trailing" secondItem="6mM-zl-awX" secondAttribute="trailing" constant="20" id="4Hk-c6-YOq"/>
+                            <constraint firstItem="JN8-Z5-hvl" firstAttribute="leading" secondItem="N28-gH-Pbg" secondAttribute="leading" id="8Ni-d3-OJy"/>
+                            <constraint firstItem="N28-gH-Pbg" firstAttribute="bottom" secondItem="JN8-Z5-hvl" secondAttribute="bottom" id="B4u-n5-ArQ"/>
+                            <constraint firstItem="N28-gH-Pbg" firstAttribute="trailing" secondItem="JN8-Z5-hvl" secondAttribute="trailing" id="FY1-ii-7cf"/>
+                            <constraint firstItem="6mM-zl-awX" firstAttribute="top" secondItem="N28-gH-Pbg" secondAttribute="top" constant="20" id="RLQ-Jk-Y3A"/>
+                            <constraint firstItem="JN8-Z5-hvl" firstAttribute="top" secondItem="6mM-zl-awX" secondAttribute="bottom" constant="20" id="jgh-T6-kGA"/>
+                            <constraint firstItem="6mM-zl-awX" firstAttribute="leading" secondItem="N28-gH-Pbg" secondAttribute="leading" constant="20" id="up8-q4-BGf"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dúvidas Frequentes" image="help" selectedImage="help-full" id="dFu-9P-Tkw"/>
+                    <connections>
+                        <outlet property="tableView" destination="JN8-Z5-hvl" id="7Xo-A2-YAt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ABN-pa-v5L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="749" y="-664"/>
         </scene>
         <!--Sobre-->
         <scene sceneID="XTd-6Z-eaL">
@@ -141,9 +90,9 @@
                                 <rect key="frame" x="122" y="54" width="170" height="133.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFJ-Lk-MXR">
-                                <rect key="frame" x="10" y="346" width="394" height="124.5"/>
+                                <rect key="frame" x="10" y="352" width="394" height="112"/>
                                 <string key="text">O aplicativo Escola em Casa DF tem como objetivo ser uma alternativa a mais de acesso à plataforma adotada para o ensino público à distância do Governo do Distrito Federal, o Google Classroom. Nesta primeira versão, a cobrança reversa ainda não estará disponível.</string>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -156,7 +105,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Links Importantes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITc-nr-ldR">
-                                <rect key="frame" x="135" y="554" width="144" height="21"/>
+                                <rect key="frame" x="135" y="547.5" width="144" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -170,7 +119,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Problemas para acessar o Google Sala de Aula?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTv-UB-4vx">
-                                <rect key="frame" x="10" y="480.5" width="394" height="20.5"/>
+                                <rect key="frame" x="10" y="474" width="394" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -204,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BC7-BL-Nrf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-214.49275362318843" y="805.58035714285711"/>
+            <point key="canvasLocation" x="-214" y="984"/>
         </scene>
         <!--Como acessar o Google sala de aula-->
         <scene sceneID="67l-wq-DyG">
@@ -336,13 +285,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Essa operação pode demorar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tf1-v6-azG">
-                                <rect key="frame" x="20" y="149.5" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="20" y="149.5" width="374" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alguns minutos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9Z-ox-WwG">
-                                <rect key="frame" x="20" y="175.5" width="374" height="21"/>
+                                <rect key="frame" x="20" y="174.5" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>

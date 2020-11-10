@@ -2,7 +2,6 @@ import UIKit
 
 class AboutViewController: UIViewController {
 
-
     // MARK: - Lifecycle
 
     // MARK: - Lifecycle

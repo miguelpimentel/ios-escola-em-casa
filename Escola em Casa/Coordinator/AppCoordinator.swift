@@ -36,5 +36,3 @@ class AppCoordinator: Coordinator {
         navigationController.pushViewController(viewController, animated: true)
     }
 }
-
-

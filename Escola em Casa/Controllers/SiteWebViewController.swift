@@ -4,7 +4,7 @@ import WebKit
 class SiteWebViewControllerViewController: UIViewController, WKNavigationDelegate {
 
     // MARK: - Properties
-    
+
     var webView: WKWebView!
 
     lazy var url: URL = {

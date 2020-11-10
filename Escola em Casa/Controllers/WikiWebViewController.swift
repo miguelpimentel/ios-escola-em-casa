@@ -9,7 +9,6 @@ class WikiWebViewController: UIViewController, WKNavigationDelegate {
 
     var webView: WKWebView!
 
-
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         activity.stopAnimating()
     }
@@ -17,7 +16,7 @@ class WikiWebViewController: UIViewController, WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         activity.stopAnimating()
     }
-    
+
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if navigationAction.targetFrame == nil {
             webView.load(navigationAction.request)
@@ -32,7 +31,7 @@ class WikiWebViewController: UIViewController, WKNavigationDelegate {
         }
 
         print("Request Bloqueada")
-        
+
         decisionHandler(.cancel)
     }
 
