@@ -10,14 +10,14 @@ import Foundation
 
 struct SessionManager {
 
-    var isOnboardingCompleted: Bool {
+    static var isOnboardingCompleted: Bool {
         get {
             let defaults = UserDefaults.standard
-            return defaults.bool(forKey: AppDefaultsKeys.onboadingCompleted.rawValue)
+            return defaults.bool(forKey: UserDefaultsKeys.onboadingCompleted.rawValue)
         }
         set {
             let defaults = UserDefaults.standard
-            defaults.setValue(newValue, forKey: AppDefaultsKeys.onboadingCompleted.rawValue)
+            defaults.setValue(newValue, forKey: UserDefaultsKeys.onboadingCompleted.rawValue)
             defaults.synchronize()
         }
     }

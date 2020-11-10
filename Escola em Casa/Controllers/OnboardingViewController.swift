@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 import SnapKit
 import paper_onboarding
 
@@ -34,6 +33,12 @@ class OnboardingViewController: UIViewController {
     // MARK: - Privete Methods
 
     private func setupLayout() {
+        setupView()
+        setupConstraints()
+
+    }
+
+    private func setupView() {
         view.addSubview(onboardingView)
         setupConstraints()
     }

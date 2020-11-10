@@ -18,6 +18,14 @@
 		AD6BECAD2533BB5B00040A04 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6BECAC2533BB5B00040A04 /* Images.swift */; };
 		AD9D98CC252F975900CAAD6A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9D98CB252F975900CAAD6A /* Coordinator.swift */; };
 		AD9F540E2537D2DF00A8A28F /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9F540D2537D2DF00A8A28F /* Storyboards.swift */; };
+		AD4D000F25289963009CAF0E /* Viewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4D000E25289963009CAF0E /* Viewable.swift */; };
+		AD4D001125289A4E009CAF0E /* StoryboardViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4D001025289A4E009CAF0E /* StoryboardViewable.swift */; };
+		AD4E81AB252A7ACA000F4AFC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E81AA252A7ACA000F4AFC /* OnboardingView.swift */; };
+		AD4E81AF252A7B28000F4AFC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E81AE252A7B28000F4AFC /* OnboardingViewController.swift */; };
+		AD4E81B2252A7D61000F4AFC /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E81B1252A7D61000F4AFC /* SessionManager.swift */; };
+		AD4E81B5252A7DBF000F4AFC /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E81B4252A7DBF000F4AFC /* UserDefaultsKeys.swift */; };
+		B015A9E02531001000794615 /* SmiSdkVpn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B015A9DE2531000A00794615 /* SmiSdkVpn.framework */; };
+		B015A9E12531001000794615 /* SmiSdkVpn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B015A9DE2531000A00794615 /* SmiSdkVpn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B058200124E3249A00ADB655 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200024E3249A00ADB655 /* CoreTelephony.framework */; };
 		B058200324E324A500ADB655 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200224E324A500ADB655 /* NetworkExtension.framework */; };
 		B058200524E324AF00ADB655 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200424E324AF00ADB655 /* SystemConfiguration.framework */; };
@@ -32,8 +40,6 @@
 		B093146624BBF36800F42961 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093146524BBF36800F42961 /* AboutViewController.swift */; };
 		B093148A24BBFEBF00F42961 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093148924BBFEBF00F42961 /* SceneDelegate.swift */; };
 		B09C247B24F89EB9000A3D4A /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09C247A24F89EB9000A3D4A /* LoadingViewController.swift */; };
-		B0C514482512F4D0009924EE /* SmiSdkVpn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C514462512F4C2009924EE /* SmiSdkVpn.framework */; };
-		B0C514492512F4D0009924EE /* SmiSdkVpn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0C514462512F4C2009924EE /* SmiSdkVpn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,7 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B0C514492512F4D0009924EE /* SmiSdkVpn.framework in Embed Frameworks */,
+				B015A9E12531001000794615 /* SmiSdkVpn.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +70,13 @@
 		AD6BECAC2533BB5B00040A04 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		AD9D98CB252F975900CAAD6A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		AD9F540D2537D2DF00A8A28F /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		AD4D000E25289963009CAF0E /* Viewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewable.swift; sourceTree = "<group>"; };
+		AD4D001025289A4E009CAF0E /* StoryboardViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewable.swift; sourceTree = "<group>"; };
+		AD4E81AA252A7ACA000F4AFC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		AD4E81AE252A7B28000F4AFC /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		AD4E81B1252A7D61000F4AFC /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		AD4E81B4252A7DBF000F4AFC /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		B015A9DE2531000A00794615 /* SmiSdkVpn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmiSdkVpn.framework; sourceTree = "<group>"; };
 		B058200024E3249A00ADB655 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B058200224E324A500ADB655 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		B058200424E324AF00ADB655 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -82,6 +95,7 @@
 		B093148924BBFEBF00F42961 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B09C247A24F89EB9000A3D4A /* LoadingViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
 		B0C514462512F4C2009924EE /* SmiSdkVpn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmiSdkVpn.framework; sourceTree = "<group>"; };
+		B09C247A24F89EB9000A3D4A /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +105,7 @@
 			files = (
 				B058200124E3249A00ADB655 /* CoreTelephony.framework in Frameworks */,
 				B058200324E324A500ADB655 /* NetworkExtension.framework in Frameworks */,
-				B0C514482512F4D0009924EE /* SmiSdkVpn.framework in Frameworks */,
+				B015A9E02531001000794615 /* SmiSdkVpn.framework in Frameworks */,
 				B058200524E324AF00ADB655 /* SystemConfiguration.framework in Frameworks */,
 				1C6C74D6AFCE7374C508873B /* Pods_Escola_em_Casa.framework in Frameworks */,
 			);
@@ -109,6 +123,29 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AD4D000C25289940009CAF0E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AD4D000E25289963009CAF0E /* Viewable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AD4D000D25289952009CAF0E /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				AD4D001025289A4E009CAF0E /* StoryboardViewable.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		AD4D001225289AF1009CAF0E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		AD4E81A9252A7ABE000F4AFC /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +159,7 @@
 			children = (
 				AD6BECAB2533BB4E00040A04 /* Images */,
 				AD4E81B4252A7DBF000F4AFC /* AppDefaultsKeys.swift */,
+				AD4E81B4252A7DBF000F4AFC /* UserDefaultsKeys.swift */,
 				AD4E81B1252A7D61000F4AFC /* SessionManager.swift */,
 				AD6BECA62533ACE300040A04 /* NetworkManager.swift */,
 				AD9F540D2537D2DF00A8A28F /* Storyboards.swift */,
@@ -205,8 +243,12 @@
 				AD4E81B0252A7D54000F4AFC /* Manager */,
 				AD4E81A9252A7ABE000F4AFC /* Views */,
 				B04429C624C8062100EF3925 /* Controllers */,
-				B0C514462512F4C2009924EE /* SmiSdkVpn.framework */,
+				B015A9DE2531000A00794615 /* SmiSdkVpn.framework */,
 				B058200624E324EB00ADB655 /* Escola em Casa.entitlements */,
+				AD4D000D25289952009CAF0E /* Enums */,
+				AD4D001225289AF1009CAF0E /* Extensions */,
+				AD4D000C25289940009CAF0E /* Protocols */,
+				B04429C624C8062100EF3925 /* Controllers */,
 				B093148924BBFEBF00F42961 /* SceneDelegate.swift */,
 				B093144F24BBEC9300F42961 /* AppDelegate.swift */,
 				B093145724BBEC9300F42961 /* Main.storyboard */,
@@ -338,12 +380,15 @@
 				AD4E81B5252A7DBF000F4AFC /* AppDefaultsKeys.swift in Sources */,
 				AD6BECAD2533BB5B00040A04 /* Images.swift in Sources */,
 				AD45F8CE252BD99600142A39 /* AppCoordinator.swift in Sources */,
+				AD4E81B5252A7DBF000F4AFC /* UserDefaultsKeys.swift in Sources */,
 				B093145624BBEC9300F42961 /* WikiWebViewController.swift in Sources */,
+				AD4D000F25289963009CAF0E /* Viewable.swift in Sources */,
 				B06D301624C8178F004FCD50 /* SiteWebViewController.swift in Sources */,
 				AD4E81AB252A7ACA000F4AFC /* OnboardingView.swift in Sources */,
 				AD9F540E2537D2DF00A8A28F /* Storyboards.swift in Sources */,
 				B09C247B24F89EB9000A3D4A /* LoadingViewController.swift in Sources */,
 				B093145424BBEC9300F42961 /* GCWebViewController.swift in Sources */,
+				AD4D001125289A4E009CAF0E /* StoryboardViewable.swift in Sources */,
 				B093146624BBF36800F42961 /* AboutViewController.swift in Sources */,
 				AD4E81AF252A7B28000F4AFC /* OnboardingViewController.swift in Sources */,
 				B093145024BBEC9300F42961 /* AppDelegate.swift in Sources */,
@@ -507,6 +552,8 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/smisdkvpn-ios_3.7.8",
 					"$(PROJECT_DIR)/Escola\\ em\\ Casa",
+					"$(PROJECT_DIR)/Escola\\ em\\ Casa",
+					"$(PROJECT_DIR)/Escola\\ em\\ Casa",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "VPN_API=1";
 				INFOPLIST_FILE = "Escola em Casa/Info.plist";
@@ -543,6 +590,8 @@
 					"$(PROJECT_DIR)/Escola\\ em\\ Casa",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/smisdkvpn-ios_3.7.8",
+					"$(PROJECT_DIR)/Escola\\ em\\ Casa",
+					"$(PROJECT_DIR)/Escola\\ em\\ Casa",
 					"$(PROJECT_DIR)/Escola\\ em\\ Casa",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "VPN_API=1";

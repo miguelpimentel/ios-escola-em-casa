@@ -1,10 +1,15 @@
 import UIKit
 import WebKit
 
-class WikiWebViewController: UIViewController, WKNavigationDelegate{
+class WikiWebViewController: UIViewController, WKNavigationDelegate {
+
+    // MARK: - Properties
+
     @IBOutlet weak var activity: UIActivityIndicatorView!
+
     var webView: WKWebView!
-    
+
+
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         activity.stopAnimating()
     }
@@ -33,9 +38,9 @@ class WikiWebViewController: UIViewController, WKNavigationDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let url = URL(string: "https://pt.wikipedia.org/")!
-        
+
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
 
@@ -44,28 +49,28 @@ class WikiWebViewController: UIViewController, WKNavigationDelegate{
         self.webView.navigationDelegate = self
         self.activity.hidesWhenStopped = true
     }
-    
+
     override func loadView() {
         super.loadView()
-        
+
         let statusBarHeight = UIApplication.shared.statusBarFrame.height
-        
+
         let screenSize: CGRect = UIScreen.main.bounds
         let subView = UIView(frame: CGRect(x: 0, y: statusBarHeight, width: screenSize.width, height: screenSize.height-statusBarHeight))
-        
+
         view.addSubview(subView)
-        
-        webView = WKWebView(frame : subView.frame)
-        
+
+        webView = WKWebView(frame: subView.frame)
+
         view.addSubview(webView)
         webView.navigationDelegate = self
-        
+
         let jsRemoveDonationButton = "javascript:(function f() {" +
             "document.getElementById('p-donation').style.display='none'; " +
             "})()"
-        
+
         let jsScriptRemoveDonationButton = WKUserScript(source: jsRemoveDonationButton, injectionTime: .atDocumentEnd, forMainFrameOnly: false)
-        
+
         webView.configuration.userContentController.addUserScript(jsScriptRemoveDonationButton)
     }
 }
