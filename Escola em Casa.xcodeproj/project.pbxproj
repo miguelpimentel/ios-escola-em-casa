@@ -20,6 +20,7 @@
 		AD835ECC2555C4EB00290C41 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD835ECA2555C4EB00290C41 /* FAQViewController.swift */; };
 		AD835ECF2555C51500290C41 /* ThemeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD835ECD2555C51400290C41 /* ThemeDataSource.swift */; };
 		AD835ED02555C51500290C41 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD835ECE2555C51500290C41 /* AppColors.swift */; };
+		AD983BF0255C869500E2F0F3 /* Escola_em_CasaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD983BEF255C869500E2F0F3 /* Escola_em_CasaTests.swift */; };
 		B015A9E02531001000794615 /* SmiSdkVpn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B015A9DE2531000A00794615 /* SmiSdkVpn.framework */; };
 		B015A9E12531001000794615 /* SmiSdkVpn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B015A9DE2531000A00794615 /* SmiSdkVpn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B058200124E3249A00ADB655 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200024E3249A00ADB655 /* CoreTelephony.framework */; };
@@ -37,6 +38,16 @@
 		B093148A24BBFEBF00F42961 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B093148924BBFEBF00F42961 /* SceneDelegate.swift */; };
 		B09C247B24F89EB9000A3D4A /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09C247A24F89EB9000A3D4A /* LoadingViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD983BF2255C869500E2F0F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B093144424BBEC9300F42961 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B093144B24BBEC9300F42961;
+			remoteInfo = "Escola em Casa";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B0581FFE24E3248700ADB655 /* Embed Frameworks */ = {
@@ -69,6 +80,9 @@
 		AD919F5E25363CB700F637FD /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		AD919F6025363D9B00F637FD /* FAQTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewCell.swift; sourceTree = "<group>"; };
 		AD947DEC254AE59100E61506 /* InjectableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableManager.swift; sourceTree = "<group>"; };
+		AD983BED255C869500E2F0F3 /* Escola em CasaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Escola em CasaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD983BEF255C869500E2F0F3 /* Escola_em_CasaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Escola_em_CasaTests.swift; sourceTree = "<group>"; };
+		AD983BF1255C869500E2F0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADA7B0C62538626000F9B8AE /* ThemeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeDataSource.swift; sourceTree = "<group>"; };
 		ADA7B0C82538627C00F9B8AE /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		B015A9DE2531000A00794615 /* SmiSdkVpn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmiSdkVpn.framework; sourceTree = "<group>"; };
@@ -94,6 +108,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AD983BEA255C869500E2F0F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B093144924BBEC9300F42961 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +227,15 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		AD983BEE255C869500E2F0F3 /* Escola em CasaTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD983BEF255C869500E2F0F3 /* Escola_em_CasaTests.swift */,
+				AD983BF1255C869500E2F0F3 /* Info.plist */,
+			);
+			path = "Escola em CasaTests";
+			sourceTree = "<group>";
+		};
 		B04429C624C8062100EF3925 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				B093144E24BBEC9300F42961 /* Escola em Casa */,
+				AD983BEE255C869500E2F0F3 /* Escola em CasaTests */,
 				B093144D24BBEC9300F42961 /* Products */,
 				B0581FFF24E3249A00ADB655 /* Frameworks */,
 				22330FB490FCD0ED159B678C /* Pods */,
@@ -248,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				B093144C24BBEC9300F42961 /* Escola em Casa.app */,
+				AD983BED255C869500E2F0F3 /* Escola em CasaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,6 +308,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AD983BEC255C869500E2F0F3 /* Escola em CasaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD983BF6255C869500E2F0F3 /* Build configuration list for PBXNativeTarget "Escola em CasaTests" */;
+			buildPhases = (
+				AD983BE9255C869500E2F0F3 /* Sources */,
+				AD983BEA255C869500E2F0F3 /* Frameworks */,
+				AD983BEB255C869500E2F0F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD983BF3255C869500E2F0F3 /* PBXTargetDependency */,
+			);
+			name = "Escola em CasaTests";
+			productName = "Escola em CasaTests";
+			productReference = AD983BED255C869500E2F0F3 /* Escola em CasaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B093144B24BBEC9300F42961 /* Escola em Casa */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B093146224BBEC9600F42961 /* Build configuration list for PBXNativeTarget "Escola em Casa" */;
@@ -303,10 +353,14 @@
 		B093144424BBEC9300F42961 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1150;
+				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Laércio Silva de Sousa Júnior";
 				TargetAttributes = {
+					AD983BEC255C869500E2F0F3 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = B093144B24BBEC9300F42961;
+					};
 					B093144B24BBEC9300F42961 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -326,11 +380,19 @@
 			projectRoot = "";
 			targets = (
 				B093144B24BBEC9300F42961 /* Escola em Casa */,
+				AD983BEC255C869500E2F0F3 /* Escola em CasaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AD983BEB255C869500E2F0F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B093144A24BBEC9300F42961 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -403,6 +465,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AD983BE9255C869500E2F0F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD983BF0255C869500E2F0F3 /* Escola_em_CasaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B093144824BBEC9300F42961 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,6 +502,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AD983BF3255C869500E2F0F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B093144B24BBEC9300F42961 /* Escola em Casa */;
+			targetProxy = AD983BF2255C869500E2F0F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		B093145724BBEC9300F42961 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -452,6 +530,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AD983BF4255C869500E2F0F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Escola em CasaTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miguelpimentel.Escola-em-CasaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Escola em Casa.app/Escola em Casa";
+			};
+			name = Debug;
+		};
+		AD983BF5255C869500E2F0F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Escola em CasaTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.miguelpimentel.Escola-em-CasaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Escola em Casa.app/Escola em Casa";
+			};
+			name = Release;
+		};
 		B093146024BBEC9600F42961 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -647,6 +767,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AD983BF6255C869500E2F0F3 /* Build configuration list for PBXNativeTarget "Escola em CasaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD983BF4255C869500E2F0F3 /* Debug */,
+				AD983BF5255C869500E2F0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B093144724BBEC9300F42961 /* Build configuration list for PBXProject "Escola em Casa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
