@@ -89,7 +89,7 @@ class GCWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate 
     // MARK: - Setup
 
     private func setupViews() {
-        webView = WKWebView(frame : view.frame)
+        webView = WKWebView(frame: view.frame)
         view.addSubview(webView)
 
         setupWebView()
@@ -105,4 +105,3 @@ class GCWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate 
         InjectorManager.inject(injectors, into: webView)
     }
 }
-

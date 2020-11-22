@@ -38,7 +38,7 @@ extension FAQViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = FAQTableViewCell()
-        
+
         cell.setup(FAQModels.content[indexPath.row])
         cell.delegate = self
         cell.isExpanded = false
