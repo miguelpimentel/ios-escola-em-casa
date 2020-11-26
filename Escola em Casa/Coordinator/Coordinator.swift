@@ -13,7 +13,7 @@ class Coordinator: NSObject, UINavigationControllerDelegate {
     // MARK: - Properties
 
     var didFinish: ((Coordinator) -> Void)?
-         
+
     var childCoordinators: [Coordinator] = []
 
     // MARK: - Methods

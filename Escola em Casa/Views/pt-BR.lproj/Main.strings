@@ -1,0 +1,45 @@
+
+/* Class = "UIButton"; normalTitle = "Escola em Casa (Site)"; ObjectID = "3AB-3z-OWx"; */
+"3AB-3z-OWx.normalTitle" = "Escola em Casa (Site)";
+
+/* Class = "UILabel"; text = "FAQ"; ObjectID = "6mM-zl-awX"; */
+"6mM-zl-awX.text" = "FAQ";
+
+/* Class = "UILabel"; text = "O aplicativo Escola em Casa DF tem como objetivo ser uma alternativa a mais de acesso à plataforma adotada para o ensino público à distância do Governo do Distrito Federal, o Google Classroom. Nesta primeira versão, a cobrança reversa ainda não estará disponível."; ObjectID = "BFJ-Lk-MXR"; */
+"BFJ-Lk-MXR.text" = "O aplicativo Escola em Casa DF tem como objetivo ser uma alternativa a mais de acesso à plataforma adotada para o ensino público à distância do Governo do Distrito Federal, o Google Classroom. Nesta primeira versão, a cobrança reversa ainda não estará disponível.";
+
+/* Class = "UILabel"; text = "Links Importantes"; ObjectID = "ITc-nr-ldR"; */
+"ITc-nr-ldR.text" = "Links Importantes";
+
+/* Class = "UILabel"; text = "Problemas para acessar o Google Sala de Aula?"; ObjectID = "OTv-UB-4vx"; */
+"OTv-UB-4vx.text" = "Problemas para acessar o Google Sala de Aula?";
+
+/* Class = "UIButton"; normalTitle = "Como acessar o Google Sala de Aula"; ObjectID = "XnT-tW-3GE"; */
+"XnT-tW-3GE.normalTitle" = "Como acessar o Google Sala de Aula";
+
+/* Class = "UITabBarItem"; title = "Sobre"; ObjectID = "XvN-s5-NHY"; */
+"XvN-s5-NHY.title" = "Sobre";
+
+/* Class = "UITabBarItem"; title = "Google Sala de Aula"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "Google Sala de Aula";
+
+/* Class = "UITabBarItem"; title = "Wikipedia"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Wikipedia";
+
+/* Class = "UITabBarItem"; title = "Dúvidas Frequentes"; ObjectID = "dFu-9P-Tkw"; */
+"dFu-9P-Tkw.title" = "Dúvidas Frequentes";
+
+/* Class = "UIViewController"; title = "Como acessar o Google sala de aula"; ObjectID = "dqC-6h-ZPu"; */
+"dqC-6h-ZPu.title" = "Como acessar o Google sala de aula";
+
+/* Class = "UIViewController"; title = "Sobre"; ObjectID = "jsG-CA-Bs8"; */
+"jsG-CA-Bs8.title" = "Sobre";
+
+/* Class = "UILabel"; text = "alguns minutos"; ObjectID = "k9Z-ox-WwG"; */
+"k9Z-ox-WwG.text" = "alguns minutos";
+
+/* Class = "UILabel"; text = "Verificando sua conexão"; ObjectID = "sCD-ek-Ozr"; */
+"sCD-ek-Ozr.text" = "Verificando sua conexão";
+
+/* Class = "UILabel"; text = "Essa operação pode demorar"; ObjectID = "tf1-v6-azG"; */
+"tf1-v6-azG.text" = "Essa operação pode demorar";

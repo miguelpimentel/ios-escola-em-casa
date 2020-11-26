@@ -2,12 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSCameraUsageDescription</key>
-	<string>$(PRODUCT_NAME) camera use</string>
-	<key>NSAppleMusicUsageDescription</key>
-	<string>$(PRODUCT_NAME) media library use</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>$(PRODUCT_NAME) photo use</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -26,30 +20,6 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>injectorEmailBlocker</key>
-	<string>&quot;javascript:(function f(e) {&quot; +
-        &quot;var email = document.getElementsByName(&apos;identifier&apos;);&quot; +
-        &quot;var submitBtn = document.getElementsByClassName(&apos;VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP5yc AjY5Oe DuMIQc qIypjc TrZEUc&apos;)[0];&quot; +
-
-        &quot;email[0].oninput = function(value) {&quot; +
-            &quot;if(!/^\\w?([\\.-]?\\w+)*(@)?((e(d(u)?)?)?|(e(s(t(u(d(a(n(t(e)?)?)?)?)?)?)?)?)?)?(\\.)?(s(e(\\.(d(f(\\.(g(o(v(\\.(b(r)?)?)?)?)?)?)?)?)?)?)?)?$/.test(email[0].value)){&quot; +
-                &quot;email[0].value = email[0].value.split(&apos;@&apos;)[0];&quot; +
-                &quot;alert(&apos;São permitidos apenas emails com domínio: @edu.se.df.gov.br ou @estudante.se.df.gov.br ou @se.df.gov.br&apos;);&quot; +
-                &quot;return false;&quot; +
-            &quot;}&quot; +
-        &quot;}&quot; +
-    &quot;})()&quot;</string>
-	<key>injectorHideEmailAccount</key>
-	<string>&quot;javascript:(function f() {&quot; +
-            &quot;document.getElementsByClassName(&apos;OIPlvf&apos;)[0].style.display=&apos;none&apos;; &quot; +
-            &quot;document.getElementsByClassName(&apos;Y4dIwd&apos;)[0].innerHTML = &apos;Use sua conta Google Sala De Aula (@edu.se.df.gov.br ou @estudante.se.df.gov.br ou @se.df.gov.br)&apos;&quot; +
-        &quot;})()&quot;</string>
-	<key>injectorFixButton</key>
-	<string>&quot;javascript:(function f() {&quot; +
-            &quot;document.getElementsByClassName(&apos;docs-ml-header-item docs-ml-header-drive-link&apos;)[0].style.display=&apos;none&apos;; &quot; +
-        &quot;})()&quot;</string>
-	<key>userAgent</key>
-	<string>Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
@@ -123,5 +93,29 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>injectorEmailBlocker</key>
+	<string>"javascript:(function f(e) {" +
+        "var email = document.getElementsByName('identifier');" +
+        "var submitBtn = document.getElementsByClassName('VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP5yc AjY5Oe DuMIQc qIypjc TrZEUc')[0];" +
+
+        "email[0].oninput = function(value) {" +
+            "if(!/^\\w?([\\.-]?\\w+)*(@)?((e(d(u)?)?)?|(e(s(t(u(d(a(n(t(e)?)?)?)?)?)?)?)?)?)?(\\.)?(s(e(\\.(d(f(\\.(g(o(v(\\.(b(r)?)?)?)?)?)?)?)?)?)?)?)?$/.test(email[0].value)){" +
+                "email[0].value = email[0].value.split('@')[0];" +
+                "alert('São permitidos apenas emails com domínio: @edu.se.df.gov.br ou @estudante.se.df.gov.br ou @se.df.gov.br');" +
+                "return false;" +
+            "}" +
+        "}" +
+    "})()"</string>
+	<key>injectorFixButton</key>
+	<string>"javascript:(function f() {" +
+            "document.getElementsByClassName('docs-ml-header-item docs-ml-header-drive-link')[0].style.display='none'; " +
+        "})()"</string>
+	<key>injectorHideEmailAccount</key>
+	<string>"javascript:(function f() {" +
+            "document.getElementsByClassName('OIPlvf')[0].style.display='none'; " +
+            "document.getElementsByClassName('Y4dIwd')[0].innerHTML = 'Use sua conta Google Sala De Aula (@edu.se.df.gov.br ou @estudante.se.df.gov.br ou @se.df.gov.br)'" +
+        "})()"</string>
+	<key>userAgent</key>
+	<string>Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1</string>
 </dict>
 </plist>
