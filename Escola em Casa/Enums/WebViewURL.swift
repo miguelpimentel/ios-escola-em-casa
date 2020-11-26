@@ -9,12 +9,15 @@
 import Foundation
 
 enum WebViewURL {
+    case main
     case howAcess
     case wikipedia
     case googleClassroom
 
     var url: URL {
         switch self {
+        case .main:
+            return URL(string: "https://escolaemcasa.se.df.gov.br/")!
         case .howAcess:
             return URL(string: "https://escolaemcasa.se.df.gov.br/index.php/como-acessar/")!
         case .wikipedia:
