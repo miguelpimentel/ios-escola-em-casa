@@ -22,6 +22,8 @@
 		AD4D001125289A4E009CAF0E /* StoryboardViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4D001025289A4E009CAF0E /* StoryboardViewable.swift */; };
 		AD4E81AB252A7ACA000F4AFC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E81AA252A7ACA000F4AFC /* OnboardingView.swift */; };
 		AD4E81AF252A7B28000F4AFC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E81AE252A7B28000F4AFC /* OnboardingViewController.swift */; };
+		AD806F9B256C65050098D590 /* WebKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD806F9A256C65050098D590 /* WebKitView.swift */; };
+		AD806FB7256C75F30098D590 /* WebViewURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD806FB6256C75F30098D590 /* WebViewURL.swift */; };
 		AD835ECB2555C4EB00290C41 /* FAQTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD835EC92555C4EB00290C41 /* FAQTableViewCell.swift */; };
 		AD835ECC2555C4EB00290C41 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD835ECA2555C4EB00290C41 /* FAQViewController.swift */; };
 		AD835ECF2555C51500290C41 /* ThemeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD835ECD2555C51400290C41 /* ThemeDataSource.swift */; };
@@ -74,6 +76,8 @@
 		AD4D001025289A4E009CAF0E /* StoryboardViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewable.swift; sourceTree = "<group>"; };
 		AD4E81AA252A7ACA000F4AFC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		AD4E81AE252A7B28000F4AFC /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		AD806F9A256C65050098D590 /* WebKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebKitView.swift; sourceTree = "<group>"; };
+		AD806FB6256C75F30098D590 /* WebViewURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewURL.swift; sourceTree = "<group>"; };
 		AD835EC92555C4EB00290C41 /* FAQTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQTableViewCell.swift; sourceTree = "<group>"; };
 		AD835ECA2555C4EB00290C41 /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		AD835ECD2555C51400290C41 /* ThemeDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThemeDataSource.swift; path = "Escola em Casa/Manager/Theme/ThemeDataSource.swift"; sourceTree = SOURCE_ROOT; };
@@ -176,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				AD4D001025289A4E009CAF0E /* StoryboardViewable.swift */,
+				AD806FB6256C75F30098D590 /* WebViewURL.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				AD4E81AA252A7ACA000F4AFC /* OnboardingView.swift */,
+				AD806F9A256C65050098D590 /* WebKitView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -469,9 +475,11 @@
 				AD835ED02555C51500290C41 /* AppColors.swift in Sources */,
 				AD4E81AF252A7B28000F4AFC /* OnboardingViewController.swift in Sources */,
 				AD4B443E255ACA6D0032B747 /* UserDefaultsKeys.swift in Sources */,
+				AD806F9B256C65050098D590 /* WebKitView.swift in Sources */,
 				B093145024BBEC9300F42961 /* AppDelegate.swift in Sources */,
 				AD4B443C255ACA6D0032B747 /* Images.swift in Sources */,
 				B06D301424C816B2004FCD50 /* HowAccessClassRoomViewController.swift in Sources */,
+				AD806FB7256C75F30098D590 /* WebViewURL.swift in Sources */,
 				AD4B443D255ACA6D0032B747 /* SessionManager.swift in Sources */,
 				AD492ECA256A8E3B006E5CD8 /* InjectorType.swift in Sources */,
 				AD4B4445255ACAC90032B747 /* Coordinator.swift in Sources */,

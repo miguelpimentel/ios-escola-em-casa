@@ -4,11 +4,8 @@ class AboutViewController: UIViewController {
 
     // MARK: - Lifecycle
 
-    // MARK: - Lifecycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
     // MARK: - Actions

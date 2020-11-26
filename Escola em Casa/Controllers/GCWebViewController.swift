@@ -1,16 +1,73 @@
 import UIKit
 import WebKit
 
-class GCWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
+class GCWebViewController: UIViewController, WKUIDelegate {
 
     // MARK: - Properties
 
-    @IBOutlet weak var activity: UIActivityIndicatorView!
+    @IBOutlet weak var activity: UIActivityIndicatorView! {
+        didSet {
+            activity.hidesWhenStopped = true
+        }
+    }
 
     lazy var webView: WKWebView = {
         var webView = WKWebView()
+        webView.addSubview(activity)
+        webView.navigationDelegate = self
+        webView.allowsBackForwardNavigationGestures = true
+
         return webView
     }()
+
+    // MARK: - View Lifecycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupLayout()
+    }
+
+    override func loadView() {
+        super.loadView()
+        setupViews()
+    }
+
+    // MARK: - Setup
+
+    private func setupViews() {
+        webView = WKWebView(frame: view.frame)
+        view.addSubview(webView)
+
+        let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
+        toolbarItems = [refresh]
+
+        setupWebView()
+    }
+
+    private func setupLayout() {
+        requestWebView()
+        activity.startAnimating()
+    }
+
+    private func setupWebView() {
+        let injectors: [InjectorType] = [.emailBlocker, .accountHider, .fixBackButton]
+
+        webView.customUserAgent = InjectorType.userAgent.getValue()
+        webView.navigationDelegate = self
+        webView.uiDelegate = self
+
+        InjectorManager.inject(injectors, into: webView)
+    }
+
+    // MARK: - Private Methods
+
+    private func requestWebView() {
+        let request = URLRequest(url: WebViewURL.googleClassroom.url)
+        webView.load(request)
+    }
+}
+
+extension GCWebViewController: WKNavigationDelegate {
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         activity.stopAnimating()
@@ -57,51 +114,6 @@ class GCWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate 
             }
         }
 
-        print("Request Bloqueada")
-
         decisionHandler(.cancel)
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        let url = URL(string: "https://classroom.google.com/a/estudante.se.df.gov.br")!
-
-        webView.load(URLRequest(url: url))
-        webView.allowsBackForwardNavigationGestures = true
-
-        // add activity
-        self.webView.addSubview(self.activity)
-        self.activity.startAnimating()
-        self.webView.navigationDelegate = self
-        self.activity.hidesWhenStopped = true
-
-        let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
-        toolbarItems = [refresh]
-    }
-
-    override func loadView() {
-        super.loadView()
-        setupViews()
-    }
-
-    // MARK: - Setup
-
-    private func setupViews() {
-        webView = WKWebView(frame : view.frame)
-        view.addSubview(webView)
-
-        setupWebView()
-    }
-
-    private func setupWebView() {
-        let injectors: [InjectorType] = [.emailBlocker, .accountHider, .fixBackButton]
-
-        webView.customUserAgent = InjectorType.userAgent.getValue()
-        webView.navigationDelegate = self
-        webView.uiDelegate = self
-
-        InjectorManager.inject(injectors, into: webView)
-    }
 }
-

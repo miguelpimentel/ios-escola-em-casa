@@ -10,6 +10,10 @@ import Foundation
 import UIKit
 import SmiSdkVpn
 
+protocol NetworkManagerDelegate: class {
+    func didReceiveResult(_ result: SmiResult)
+}
+
 class NetworkManager {
 
     init() {
