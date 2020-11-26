@@ -28,13 +28,10 @@ class WikiWebViewController: UIViewController {
     }
 
     private func removeWebViewAdds(_ webview: WKWebView) -> WKWebView {
-        let jsRemoveDonationButton = "javascript:(function f() {" +
-            "document.getElementById('p-donation').style.display='none'; " +
-            "})()"
+        guard let removeDonationButton = InjectableStrings.wikipediaInjection.text else { return }
 
-        let jsScriptRemoveDonationButton = WKUserScript(source: jsRemoveDonationButton, injectionTime: .atDocumentEnd, forMainFrameOnly: false)
+        let jsScriptRemoveDonationButton = WKUserScript(source: removeDonationButton, injectionTime: .atDocumentEnd, forMainFrameOnly: false)
         webView.configuration.userContentController.addUserScript(jsScriptRemoveDonationButton)
-
         return webview
     }
 

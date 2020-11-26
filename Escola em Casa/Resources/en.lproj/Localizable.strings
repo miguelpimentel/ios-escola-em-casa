@@ -14,3 +14,5 @@
 "faq_answer2" = "Mesmo quando liberado o patrocínio dos dados, não será pago pelo Governo o uso da plataforma Meet Google, pois só é possível utilizá-la através do seu próprio  aplicativo. É responsabilidade do governo arcar somente pelas plataformas que são abertas dentro do nosso próprio aplicativo, Escola em Casa DF.";
 "faq_question3" = "Se eu rotear a internet do celular para o computador, os dados móveis de internet serão pagos pelo governo?";
 "faq_answer3" = "Não serão patrocinados (pagos) os dados móveis de internet quando roteados, ou compartilhados, com outros dispositivos e/ou computadores.";
+
+"wiki_injection" = "javascript:(function f() { document.getElementById('p-donation').style.display='none'; })()";

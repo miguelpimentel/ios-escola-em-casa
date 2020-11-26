@@ -26,6 +26,7 @@ class HowAccessClassRoomViewController: UIViewController {
 
 extension HowAccessClassRoomViewController: WKNavigationDelegate {
 
+
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         if isPrivacyAvailableForDomain(navigationAction.request.url?.host) {
             decisionHandler(.allow)
@@ -36,7 +37,8 @@ extension HowAccessClassRoomViewController: WKNavigationDelegate {
     }
 
     private func isPrivacyAvailableForDomain(_ host: String?) -> Bool {
-        if let host = host, host.contains("escolaemcasa.se.df.gov.br") {
+        let filterKey = "escolaemcasa.se.df.gov.br"
+        if let host = host, host.contains(filterKey) {
             return true
         } else {
             return false

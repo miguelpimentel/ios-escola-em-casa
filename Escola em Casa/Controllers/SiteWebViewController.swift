@@ -45,7 +45,8 @@ class SiteWebViewControllerViewController: UIViewController, WKNavigationDelegat
     }
 
     private func isPrivacyAvailableForDomain(_ host: String?) -> Bool {
-        if let host = host, host.contains("escolaemcasa.se.df.gov.br") {
+        let filterKey = "escolaemcasa.se.df.gov.br"
+        if let host = host, host.contains(filterKey) {
             return true
         } else {
             return false
