@@ -78,22 +78,13 @@ extension FAQViewController: FAQTableViewCellDelegate {
 struct FAQModels {
 
     static var content: [FAQ] = [
-        FAQ(
-            title: "Os dados móveis de internet do aplicativo já estão sendo pagos pelo governo?",
-            description: "Os dados móveis de internet já estão sendo patrocinados (pagos) pelo Governo do Distrito Federal. No momento, é possivel fazer uso dos dados utilizando chips ativos das operadoras Claro e Tim"
-        ),
-        FAQ(
-            title: "O governo pagará pelo uso da plataforma Meet Google?",
-            description: "Mesmo quando liberado o patrocínio dos dados, não será pago pelo Governo o uso da plataforma Meet Google, pois só é possível utilizá-la através do seu próprio  aplicativo. É responsabilidade do governo arcar somente pelas plataformas que são abertas dentro do nosso próprio aplicativo, Escola em Casa DF."
-        ),
-        FAQ(
-            title: "Se eu rotear a internet do celular para o computador, os dados móveis de internet serão pagos pelo governo?",
-            description: "Não serão patrocinados (pagos) os dados móveis de internet quando roteados, ou compartilhados, com outros dispositivos e/ou computadores."
-        )
+        FAQ(title: FAQLocalizable.question1.text, description: FAQLocalizable.answer1.text),
+        FAQ(title: FAQLocalizable.question2.text, description: FAQLocalizable.answer2.text),
+        FAQ(title: FAQLocalizable.question3.text, description: FAQLocalizable.answer3.text)
     ]
 
     struct FAQ {
-        var title: String
-        var description: String
+        var title: String?
+        var description: String?
     }
 }

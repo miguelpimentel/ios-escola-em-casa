@@ -54,7 +54,6 @@ class WikiWebViewController: UIViewController {
 
     private func createWebView() -> WKWebView {
         let webView = WKWebView()
-        webView.backgroundColor = .red
         webView.navigationDelegate = self
         webView.allowsBackForwardNavigationGestures = true
         webView.navigationDelegate = self
