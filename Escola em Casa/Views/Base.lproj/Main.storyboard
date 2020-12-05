@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -56,23 +56,10 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="71U-oz-4pD">
-                                <rect key="frame" x="197" y="438" width="20" height="20"/>
-                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </activityIndicatorView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="71U-oz-4pD" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="qxN-ye-5BC"/>
-                            <constraint firstItem="71U-oz-4pD" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="rLo-tR-FGc"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Google Sala de Aula" image="book" selectedImage="book-full" id="acW-dT-cKf"/>
-                    <connections>
-                        <outlet property="activity" destination="71U-oz-4pD" id="4r6-qb-fhZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,7 +84,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnT-tW-3GE">
-                                <rect key="frame" x="67" y="511" width="280" height="33"/>
+                                <rect key="frame" x="67" y="504.5" width="280" height="33"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Como acessar o Google Sala de Aula"/>
                                 <connections>
@@ -111,7 +98,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AB-3z-OWx">
-                                <rect key="frame" x="124" y="585" width="166" height="33"/>
+                                <rect key="frame" x="124" y="578.5" width="166" height="33"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Escola em Casa (Site)"/>
                                 <connections>
@@ -169,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ziC-IN-0qG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="164" y="1557"/>
+            <point key="canvasLocation" x="516" y="1701"/>
         </scene>
         <!--Wikipedia-->
         <scene sceneID="wg7-f3-ORb">
@@ -178,23 +165,10 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="2Ka-98-xeU">
-                                <rect key="frame" x="197" y="438" width="20" height="20"/>
-                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </activityIndicatorView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="2Ka-98-xeU" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="Oht-fu-kqb"/>
-                            <constraint firstItem="2Ka-98-xeU" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="snx-pV-x4A"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Wikipedia" image="wiki" selectedImage="wiki-full" id="cPa-gy-q4n"/>
-                    <connections>
-                        <outlet property="activity" destination="2Ka-98-xeU" id="YNx-vM-drc"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -234,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bpu-yN-csd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-732" y="1557"/>
+            <point key="canvasLocation" x="-726" y="1736"/>
         </scene>
         <!--Loading View Controller-->
         <scene sceneID="5NA-Ia-LEe">

@@ -5,15 +5,8 @@ class GCWebViewController: UIViewController, WKUIDelegate {
 
     // MARK: - Properties
 
-    @IBOutlet weak var activity: UIActivityIndicatorView! {
-        didSet {
-            activity.hidesWhenStopped = true
-        }
-    }
-
     lazy var webView: WKWebView = {
         var webView = WKWebView()
-        webView.addSubview(activity)
         webView.navigationDelegate = self
         webView.allowsBackForwardNavigationGestures = true
 
@@ -46,7 +39,7 @@ class GCWebViewController: UIViewController, WKUIDelegate {
 
     private func setupLayout() {
         requestWebView()
-        activity.startAnimating()
+        Loader.start(loaderColor: AppColors.primaryColor)
     }
 
     private func setupWebView() {
@@ -70,11 +63,11 @@ class GCWebViewController: UIViewController, WKUIDelegate {
 extension GCWebViewController: WKNavigationDelegate {
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        activity.stopAnimating()
+        Loader.stop()
     }
 
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        activity.stopAnimating()
+        Loader.stop()
     }
 
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {

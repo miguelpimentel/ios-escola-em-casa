@@ -5,8 +5,6 @@ class WikiWebViewController: UIViewController {
 
     // MARK: - Properties
 
-    @IBOutlet weak var activity: UIActivityIndicatorView!
-
     var webView: WKWebView!
 
     // MARK: - Life Cycle
@@ -43,10 +41,7 @@ class WikiWebViewController: UIViewController {
     }
 
     private func setupActivity() {
-        webView.addSubview(self.activity)
-
-        self.activity.startAnimating()
-        self.activity.hidesWhenStopped = true
+        Loader.start(loaderColor: AppColors.primaryColor)
     }
 
     private func createWebView() -> WKWebView {
@@ -62,11 +57,11 @@ class WikiWebViewController: UIViewController {
 extension WikiWebViewController: WKNavigationDelegate {
 
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        activity.stopAnimating()
+        Loader.stop()
     }
 
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        activity.stopAnimating()
+        Loader.stop()
     }
 
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {

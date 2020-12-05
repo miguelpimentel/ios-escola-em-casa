@@ -34,6 +34,7 @@
 		AD8B4C20257BD26F008D4D95 /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD8B4C1D257BD26E008D4D95 /* Main.strings */; };
 		AD8B4C22257BD3A3008D4D95 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8B4C21257BD3A3008D4D95 /* Images.swift */; };
 		AD8B4C24257BD438008D4D95 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8B4C23257BD438008D4D95 /* Coordinator.swift */; };
+		AD8B4C26257C3327008D4D95 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8B4C25257C3327008D4D95 /* Loader.swift */; };
 		B015A9E02531001000794615 /* SmiSdkVpn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B015A9DE2531000A00794615 /* SmiSdkVpn.framework */; };
 		B015A9E12531001000794615 /* SmiSdkVpn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B015A9DE2531000A00794615 /* SmiSdkVpn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B058200124E3249A00ADB655 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200024E3249A00ADB655 /* CoreTelephony.framework */; };
@@ -91,6 +92,7 @@
 		AD8B4C1E257BD26E008D4D95 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = Main.strings; sourceTree = "<group>"; };
 		AD8B4C21257BD3A3008D4D95 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Images.swift; path = "Escola em Casa/Resources/Images.swift"; sourceTree = SOURCE_ROOT; };
 		AD8B4C23257BD438008D4D95 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		AD8B4C25257C3327008D4D95 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		AD919F5E25363CB700F637FD /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 		AD919F6025363D9B00F637FD /* FAQTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewCell.swift; sourceTree = "<group>"; };
 		AD947DEC254AE59100E61506 /* InjectableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableManager.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				AD4B444B255ACAF50032B747 /* Network */,
 				AD835ED62555C66000290C41 /* Session */,
 				AD835ED52555C65200290C41 /* Theme */,
+				AD8B4C25257C3327008D4D95 /* Loader.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				AD8B4C11257BD1E0008D4D95 /* SceneDelegate.swift in Sources */,
 				B093145624BBEC9300F42961 /* WikiWebViewController.swift in Sources */,
 				B06D301624C8178F004FCD50 /* SiteWebViewController.swift in Sources */,
+				AD8B4C26257C3327008D4D95 /* Loader.swift in Sources */,
 				AD4E81AB252A7ACA000F4AFC /* OnboardingView.swift in Sources */,
 				AD8B4C0C257BD1B3008D4D95 /* Localizable.swift in Sources */,
 				B09C247B24F89EB9000A3D4A /* LoadingViewController.swift in Sources */,
