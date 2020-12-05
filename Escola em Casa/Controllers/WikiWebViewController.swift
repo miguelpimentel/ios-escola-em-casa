@@ -28,7 +28,7 @@ class WikiWebViewController: UIViewController {
     }
 
     private func removeWebViewAdds(_ webview: WKWebView) -> WKWebView {
-        guard let removeDonationButton = InjectableStrings.wikipediaInjection.text else { return }
+        guard let removeDonationButton = InjectableStrings.wikipediaInjection.text else { return  webview }
 
         let jsScriptRemoveDonationButton = WKUserScript(source: removeDonationButton, injectionTime: .atDocumentEnd, forMainFrameOnly: false)
         webView.configuration.userContentController.addUserScript(jsScriptRemoveDonationButton)
