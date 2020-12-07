@@ -118,22 +118,6 @@
             </objects>
             <point key="canvasLocation" x="-214" y="984"/>
         </scene>
-        <!--Como acessar o Google sala de aula-->
-        <scene sceneID="67l-wq-DyG">
-            <objects>
-                <viewController storyboardIdentifier="HowAccessClassRoomView" title="Como acessar o Google sala de aula" id="dqC-6h-ZPu" customClass="HowAccessClassRoomViewController" customModule="Escola_em_Casa" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kX1-pb-JO0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="KLo-8r-d0U"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="rig-Sb-lnN"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ziC-IN-0qG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="516" y="1701"/>
-        </scene>
         <!--Wikipedia-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -169,22 +153,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-214" y="-23"/>
-        </scene>
-        <!--Site Web View Controller View Controller-->
-        <scene sceneID="rcz-vh-4uX">
-            <objects>
-                <viewController storyboardIdentifier="SiteWebView" id="flp-PG-dgB" customClass="SiteWebViewControllerViewController" customModule="Escola_em_Casa" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1eV-9k-wbp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="PhQ-G6-F3i"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Rdx-ed-UIC"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bpu-yN-csd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-726" y="1736"/>
         </scene>
         <!--Loading View Controller-->
         <scene sceneID="5NA-Ia-LEe">
