@@ -75,7 +75,6 @@ extension BaseWebViewController: WKNavigationDelegate {
     }
 
     private func isPrivacyAvailableForDomain(_ host: String?) -> Bool {
-//        let filterKey = "escolaemcasa.se.df.gov.br"
         if let host = host, host.contains(domain) {
             return true
         } else {
