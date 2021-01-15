@@ -2,6 +2,8 @@ import UIKit
 import WebKit
 
 class SiteWebViewControllerViewController: UIViewController, WKNavigationDelegate {
+
+    // MARK: - Properties
     
     var webView: WKWebView!
 

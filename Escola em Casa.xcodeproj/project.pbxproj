@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C6C74D6AFCE7374C508873B /* Pods_Escola_em_Casa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626E6F736A7826E8CBB1CEA5 /* Pods_Escola_em_Casa.framework */; };
+		AD4E81AB252A7ACA000F4AFC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E81AA252A7ACA000F4AFC /* OnboardingView.swift */; };
+		AD4E81AF252A7B28000F4AFC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E81AE252A7B28000F4AFC /* OnboardingViewController.swift */; };
+		AD4E81B2252A7D61000F4AFC /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E81B1252A7D61000F4AFC /* SessionManager.swift */; };
+		AD4E81B5252A7DBF000F4AFC /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4E81B4252A7DBF000F4AFC /* UserDefaultsKeys.swift */; };
 		B015A9E02531001000794615 /* SmiSdkVpn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B015A9DE2531000A00794615 /* SmiSdkVpn.framework */; };
 		B015A9E12531001000794615 /* SmiSdkVpn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B015A9DE2531000A00794615 /* SmiSdkVpn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B058200124E3249A00ADB655 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B058200024E3249A00ADB655 /* CoreTelephony.framework */; };
@@ -40,6 +45,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5151DD80682D097B54570910 /* Pods-Escola em Casa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Escola em Casa.debug.xcconfig"; path = "Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa.debug.xcconfig"; sourceTree = "<group>"; };
+		626E6F736A7826E8CBB1CEA5 /* Pods_Escola_em_Casa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Escola_em_Casa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C8AC449380F473F3732452F /* Pods-Escola em Casa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Escola em Casa.release.xcconfig"; path = "Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa.release.xcconfig"; sourceTree = "<group>"; };
+		AD4E81AA252A7ACA000F4AFC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		AD4E81AE252A7B28000F4AFC /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		AD4E81B1252A7D61000F4AFC /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		AD4E81B4252A7DBF000F4AFC /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 		B015A9DE2531000A00794615 /* SmiSdkVpn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmiSdkVpn.framework; sourceTree = "<group>"; };
 		B058200024E3249A00ADB655 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		B058200224E324A500ADB655 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
@@ -69,12 +81,39 @@
 				B058200324E324A500ADB655 /* NetworkExtension.framework in Frameworks */,
 				B015A9E02531001000794615 /* SmiSdkVpn.framework in Frameworks */,
 				B058200524E324AF00ADB655 /* SystemConfiguration.framework in Frameworks */,
+				1C6C74D6AFCE7374C508873B /* Pods_Escola_em_Casa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22330FB490FCD0ED159B678C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5151DD80682D097B54570910 /* Pods-Escola em Casa.debug.xcconfig */,
+				9C8AC449380F473F3732452F /* Pods-Escola em Casa.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD4E81A9252A7ABE000F4AFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD4E81AA252A7ACA000F4AFC /* OnboardingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD4E81B0252A7D54000F4AFC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				AD4E81B4252A7DBF000F4AFC /* UserDefaultsKeys.swift */,
+				AD4E81B1252A7D61000F4AFC /* SessionManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		B04429C624C8062100EF3925 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +123,7 @@
 				B06D301324C816B2004FCD50 /* HowAccessClassRoomViewController.swift */,
 				B06D301524C8178F004FCD50 /* SiteWebViewController.swift */,
 				B09C247A24F89EB9000A3D4A /* LoadingViewController.swift */,
+				AD4E81AE252A7B28000F4AFC /* OnboardingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -94,6 +134,7 @@
 				B058200424E324AF00ADB655 /* SystemConfiguration.framework */,
 				B058200224E324A500ADB655 /* NetworkExtension.framework */,
 				B058200024E3249A00ADB655 /* CoreTelephony.framework */,
+				626E6F736A7826E8CBB1CEA5 /* Pods_Escola_em_Casa.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -104,6 +145,7 @@
 				B093144E24BBEC9300F42961 /* Escola em Casa */,
 				B093144D24BBEC9300F42961 /* Products */,
 				B0581FFF24E3249A00ADB655 /* Frameworks */,
+				22330FB490FCD0ED159B678C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,9 +160,12 @@
 		B093144E24BBEC9300F42961 /* Escola em Casa */ = {
 			isa = PBXGroup;
 			children = (
+
+				AD4E81B0252A7D54000F4AFC /* Manager */,
+				AD4E81A9252A7ABE000F4AFC /* Views */,
+				B04429C624C8062100EF3925 /* Controllers */,
 				B015A9DE2531000A00794615 /* SmiSdkVpn.framework */,
 				B058200624E324EB00ADB655 /* Escola em Casa.entitlements */,
-				B04429C624C8062100EF3925 /* Controllers */,
 				B093148924BBFEBF00F42961 /* SceneDelegate.swift */,
 				B093144F24BBEC9300F42961 /* AppDelegate.swift */,
 				B093145724BBEC9300F42961 /* Main.storyboard */,
@@ -138,10 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B093146224BBEC9600F42961 /* Build configuration list for PBXNativeTarget "Escola em Casa" */;
 			buildPhases = (
+				C0BCC288377BE3A554682D1F /* [CP] Check Pods Manifest.lock */,
 				B093144824BBEC9300F42961 /* Sources */,
 				B093144924BBEC9300F42961 /* Frameworks */,
 				B093144A24BBEC9300F42961 /* Resources */,
 				B0581FFE24E3248700ADB655 /* Embed Frameworks */,
+				871BE3A69841BED669963B74 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,19 +245,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		871BE3A69841BED669963B74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Escola em Casa/Pods-Escola em Casa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0BCC288377BE3A554682D1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Escola em Casa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B093144824BBEC9300F42961 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B093148A24BBFEBF00F42961 /* SceneDelegate.swift in Sources */,
+				AD4E81B5252A7DBF000F4AFC /* UserDefaultsKeys.swift in Sources */,
 				B093145624BBEC9300F42961 /* WikiWebViewController.swift in Sources */,
 				B06D301624C8178F004FCD50 /* SiteWebViewController.swift in Sources */,
+				AD4E81AB252A7ACA000F4AFC /* OnboardingView.swift in Sources */,
 				B09C247B24F89EB9000A3D4A /* LoadingViewController.swift in Sources */,
 				B093145424BBEC9300F42961 /* GCWebViewController.swift in Sources */,
 				B093146624BBF36800F42961 /* AboutViewController.swift in Sources */,
+				AD4E81AF252A7B28000F4AFC /* OnboardingViewController.swift in Sources */,
 				B093145024BBEC9300F42961 /* AppDelegate.swift in Sources */,
 				B06D301424C816B2004FCD50 /* HowAccessClassRoomViewController.swift in Sources */,
+				AD4E81B2252A7D61000F4AFC /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +445,7 @@
 		};
 		B093146324BBEC9600F42961 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5151DD80682D097B54570910 /* Pods-Escola em Casa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Escola em Casa/Escola em Casa.entitlements";
@@ -390,6 +484,7 @@
 		};
 		B093146424BBEC9600F42961 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C8AC449380F473F3732452F /* Pods-Escola em Casa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Escola em Casa/Escola em Casa.entitlements";

@@ -1,8 +1,12 @@
 import UIKit
 import WebKit
 
-class WikiWebViewController: UIViewController, WKNavigationDelegate{
+class WikiWebViewController: UIViewController, WKNavigationDelegate {
+
+    // MARK: - Properties
+
     @IBOutlet weak var activity: UIActivityIndicatorView!
+
     var webView: WKWebView!
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
